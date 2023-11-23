@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="main.SACEBeducationboxController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.SACEBeducationboxController">
    <children>
       <AnchorPane layoutX="84.0" layoutY="20.0" prefHeight="360.0" prefWidth="432.0">
          <children>
@@ -19,11 +18,8 @@
                   <BoxBlur />
                </effect>
             </TextArea>
-            <Button cancelButton="true" layoutX="97.0" layoutY="141.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" text=".Curriculum Updates" textFill="#262024" />
-            <Button cancelButton="true" layoutX="97.0" layoutY="180.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" text="Online Learning Resources" />
-            <Button cancelButton="true" layoutX="97.0" layoutY="309.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" text="School Performance Data" />
-            <Button cancelButton="true" layoutX="97.0" layoutY="266.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" text="Feedback Mechanism" />
-            <Button cancelButton="true" layoutX="97.0" layoutY="223.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" text="Student Assessments" />
+            <Button cancelButton="true" layoutX="98.0" layoutY="180.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" text=".Curriculum Updates" textFill="#262024" />
+            <Button cancelButton="true" layoutX="98.0" layoutY="238.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" text="Online Learning Resources" />
             <Button layoutX="353.0" layoutY="309.0" mnemonicParsing="false" text="&lt;&lt;Back" />
          </children>
       </AnchorPane>

@@ -51,30 +51,107 @@ public class ADCDashboardController implements Initializable {
 
     @FXML
     private void localOnClick(ActionEvent event) {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Updates Notes.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
 
     @FXML
     private void bangladeshOnClick(ActionEvent event) {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC View Law.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
 
     @FXML
     private void gdOnClick(ActionEvent event) {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Criminal Record.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
 
     @FXML
     private void taxOnClick(ActionEvent event) {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Tax report.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
 
     @FXML
     private void educationOnClick(ActionEvent event) {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Educational Institute.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
 
     @FXML
     private void socialOnClick(ActionEvent event) {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Organizing.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
 
     @FXML
     private void appointmentOnClick(ActionEvent event) {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Appointments and meetings.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
     
 }

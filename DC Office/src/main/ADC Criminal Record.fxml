@@ -8,23 +8,23 @@
 
 <AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ADCCriminalRecordController">
    <children>
-      <TextArea layoutX="76.0" layoutY="117.0" prefHeight="265.0" prefWidth="565.0" />
+      <TextArea fx:id="criminalrecord" layoutX="76.0" layoutY="117.0" prefHeight="265.0" prefWidth="565.0" />
       <Text layoutX="76.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Criminal record:" underline="true">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Text>
-      <Button layoutX="76.0" layoutY="395.0" mnemonicParsing="false" text="ADD">
+      <Button layoutX="76.0" layoutY="395.0" mnemonicParsing="false" onAction="#addOnClick" text="ADD">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="160.0" layoutY="395.0" mnemonicParsing="false" text="DELETE">
+      <Button layoutX="160.0" layoutY="395.0" mnemonicParsing="false" onAction="#deleteOnClick" text="DELETE">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="550.0" layoutY="395.0" mnemonicParsing="false" text="&lt;&lt; Back">
+      <Button layoutX="550.0" layoutY="395.0" mnemonicParsing="false" onAction="#backOnClick" text="&lt;&lt; Back">
          <font>
             <Font size="18.0" />
          </font>

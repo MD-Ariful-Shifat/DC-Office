@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="457.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.EI_DigitalLiteracyController">
+   <children>
+      <Button layoutX="43.0" layoutY="385.0" mnemonicParsing="false" text="&lt;&lt;Back" />
+      <Label layoutX="79.0" layoutY="146.0" text="All the courses list" />
+      <Label layoutX="382.0" layoutY="146.0" text="All the blog list" />
+      <TextArea layoutX="79.0" layoutY="188.0" prefHeight="159.0" prefWidth="142.0" />
+      <TextArea layoutX="382.0" layoutY="188.0" prefHeight="159.0" prefWidth="142.0" />
+      <Label layoutX="73.0" layoutY="58.0" text="Courses" />
+      <Label layoutX="73.0" layoutY="94.0" text="Blog" />
+      <Button layoutX="174.0" layoutY="53.0" mnemonicParsing="false" text="Enter" />
+      <Button layoutX="174.0" layoutY="89.0" mnemonicParsing="false" text="Enter" />
+   </children>
+</AnchorPane>

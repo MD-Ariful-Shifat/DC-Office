@@ -31,9 +31,6 @@ public class ADCDashboardController implements Initializable {
         // TODO
     }    
 
-    @FXML
-    private void gdandfirOnClick(ActionEvent event) {
-    }
 
     @FXML
     private void signoutOnClick(ActionEvent event) throws IOException {
@@ -50,6 +47,34 @@ public class ADCDashboardController implements Initializable {
         someStage.show();
 
 
+    }
+
+    @FXML
+    private void localOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void bangladeshOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void gdOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void taxOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void educationOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void socialOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void appointmentOnClick(ActionEvent event) {
     }
     
 }

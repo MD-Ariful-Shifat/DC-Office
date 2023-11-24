@@ -9,7 +9,9 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
@@ -19,7 +21,13 @@ import javafx.scene.control.TextArea;
 public class ADCCriminalRecordController implements Initializable {
 
     @FXML
-    private TextArea criminalrecord;
+    private TextArea outputTextArea;
+    @FXML
+    private TextField nameTextArea;
+    @FXML
+    private TextField crimeTextArea;
+    @FXML
+    private DatePicker datePicker;
 
     /**
      * Initializes the controller class.

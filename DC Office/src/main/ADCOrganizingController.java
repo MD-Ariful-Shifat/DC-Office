@@ -6,7 +6,10 @@ package main;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextArea;
 
 /**
  * FXML Controller class
@@ -15,6 +18,11 @@ import javafx.fxml.Initializable;
  */
 public class ADCOrganizingController implements Initializable {
 
+    @FXML
+    private TextArea inputTextArea;
+    @FXML
+    private TextArea outputTextArea;
+
     /**
      * Initializes the controller class.
      */
@@ -22,5 +30,17 @@ public class ADCOrganizingController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void saveOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void deleteOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void backOnClick(ActionEvent event) {
+    }
     
 }

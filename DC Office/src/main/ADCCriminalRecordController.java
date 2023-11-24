@@ -6,7 +6,10 @@ package main;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextArea;
 
 /**
  * FXML Controller class
@@ -15,6 +18,9 @@ import javafx.fxml.Initializable;
  */
 public class ADCCriminalRecordController implements Initializable {
 
+    @FXML
+    private TextArea criminalrecord;
+
     /**
      * Initializes the controller class.
      */
@@ -22,5 +28,17 @@ public class ADCCriminalRecordController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void addOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void deleteOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void backOnClick(ActionEvent event) {
+    }
     
 }

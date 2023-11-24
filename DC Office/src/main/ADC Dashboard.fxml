@@ -16,7 +16,7 @@
             <Font size="15.0" />
          </font>
       </Button>
-      <Button layoutX="327.0" layoutY="182.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="201.0" text="GD and FIR">
+      <Button layoutX="327.0" layoutY="182.0" mnemonicParsing="false" onAction="#gdandfirOnClick" prefHeight="25.0" prefWidth="201.0" text="GD and FIR">
          <font>
             <Font size="15.0" />
          </font>
@@ -46,7 +46,7 @@
             <Font size="15.0" />
          </font>
       </Button>
-      <Button layoutX="53.0" layoutY="513.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="201.0" text="&lt;&lt; Back">
+      <Button layoutX="53.0" layoutY="513.0" mnemonicParsing="false" onAction="#signoutOnClick" prefHeight="25.0" prefWidth="201.0" text="Sign Out">
          <font>
             <Font size="15.0" />
          </font>

@@ -12,12 +12,12 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Text>
-      <Button layoutX="51.0" layoutY="119.0" mnemonicParsing="false" text="Download the pdf">
+      <Button layoutX="51.0" layoutY="119.0" mnemonicParsing="false" onAction="#downloadOnClick" text="Download the pdf">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="51.0" layoutY="395.0" mnemonicParsing="false" text="&lt;&lt; Back">
+      <Button layoutX="51.0" layoutY="395.0" mnemonicParsing="false" onAction="#backOnClick" text="&lt;&lt; Back">
          <font>
             <Font size="14.0" />
          </font>

@@ -8,7 +8,12 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -31,6 +36,17 @@ public class SACTaxReportController implements Initializable {
 
     @FXML
     private void backOnClick(ActionEvent event) {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SAC Dashboard.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
     
 }

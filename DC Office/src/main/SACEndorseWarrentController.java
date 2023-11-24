@@ -13,7 +13,7 @@ import javafx.fxml.Initializable;
  *
  * @author USER
  */
-public class SACComplainController implements Initializable {
+public class SACEndorseWarrentController implements Initializable {
 
     /**
      * Initializes the controller class.

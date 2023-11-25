@@ -102,11 +102,8 @@ public class DistrictAdministratordashboardController implements Initializable {
     @FXML
     private void viaOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-<<<<<<< Updated upstream
+        
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("AA_viaamail.fxml"));
-=======
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG2Teacherprofesionaldevlopmentpage.fxml"));
->>>>>>> Stashed changes
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
         

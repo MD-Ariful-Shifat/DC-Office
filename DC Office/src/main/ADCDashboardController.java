@@ -4,6 +4,7 @@
  */
 package main;
 
+import Model.DC;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -22,7 +23,7 @@ import javafx.stage.Stage;
  * @author USER
  */
 public class ADCDashboardController implements Initializable {
-    
+    private DC user;
     /**
      * Initializes the controller class.
      */
@@ -31,6 +32,14 @@ public class ADCDashboardController implements Initializable {
         // TODO
     }    
 
+    public DC getUser() {
+        return user;
+    }
+
+    public void setUser(DC user) {
+        this.user = user;
+    }
+
 
     @FXML
     private void signoutOnClick(ActionEvent event) throws IOException {
@@ -38,6 +47,8 @@ public class ADCDashboardController implements Initializable {
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SignIn Page.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
+        
+        System.out.println(this.user.toString());
 
         /*SomeFXMLController p = someLoader.getController();
         p.setUser(this.user);*/

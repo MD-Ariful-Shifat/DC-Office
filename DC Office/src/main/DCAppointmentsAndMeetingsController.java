@@ -24,7 +24,7 @@ import javafx.stage.Stage;
  *
  * @author USER
  */
-public class ADCAppointmentsAndMeetingsController implements Initializable {
+public class DCAppointmentsAndMeetingsController implements Initializable {
 
     @FXML
     private TextArea inputTextArea;

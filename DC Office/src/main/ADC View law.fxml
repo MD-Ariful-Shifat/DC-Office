@@ -17,14 +17,14 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <Button layoutX="325.0" layoutY="164.0" mnemonicParsing="false" text="Download PDF">
+      <Button layoutX="325.0" layoutY="164.0" mnemonicParsing="false" onAction="#downloadOnClick" text="Download PDF">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="64.0" layoutY="423.0" mnemonicParsing="false" text="&lt;&lt; Back">
+      <Button layoutX="64.0" layoutY="423.0" mnemonicParsing="false" onAction="#backOnClick" text="&lt;&lt; Back">
          <font>
-            <Font size="18.0" />
+            <Font size="13.0" />
          </font>
       </Button>
    </children>

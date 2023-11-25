@@ -17,19 +17,19 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <TextArea layoutX="42.0" layoutY="125.0" prefHeight="257.0" prefWidth="432.0" />
-            <TextArea layoutX="512.0" layoutY="125.0" prefHeight="257.0" prefWidth="200.0" />
-            <Button layoutX="42.0" layoutY="429.0" mnemonicParsing="false" text="Save">
+            <TextArea fx:id="inputTextArea" layoutX="42.0" layoutY="125.0" prefHeight="257.0" prefWidth="432.0" />
+            <TextArea fx:id="outputTextArea" layoutX="512.0" layoutY="125.0" prefHeight="257.0" prefWidth="200.0" />
+            <Button defaultButton="true" layoutX="42.0" layoutY="429.0" mnemonicParsing="false" onAction="#saveOnClick" text="Save">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button layoutX="102.0" layoutY="429.0" mnemonicParsing="false" text="Delete">
+            <Button defaultButton="true" layoutX="102.0" layoutY="429.0" mnemonicParsing="false" onAction="#deleteOnClick" text="Delete">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button layoutX="651.0" layoutY="432.0" mnemonicParsing="false" text="&lt;&lt; Back" />
+            <Button defaultButton="true" layoutX="651.0" layoutY="432.0" mnemonicParsing="false" onAction="#backOnClick" text="&lt;&lt; Back" />
          </children>
       </AnchorPane>
    </children>

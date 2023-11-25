@@ -6,6 +6,8 @@ package main;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
@@ -22,5 +24,37 @@ public class AA_sendNoticeController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void dateOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void timeOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void roomnoOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void arOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void avnoOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void sendOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void cancelOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void backOnClick(ActionEvent event) {
+    }
     
 }

@@ -6,6 +6,8 @@ package main;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
@@ -22,5 +24,33 @@ public class AARespondToAppointmentController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void seOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void cancelOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void backOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void tOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void dOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void cdtOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void noOnClick(ActionEvent event) {
+    }
     
 }

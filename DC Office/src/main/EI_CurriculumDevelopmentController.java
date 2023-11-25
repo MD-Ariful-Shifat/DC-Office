@@ -6,6 +6,8 @@ package main;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
@@ -22,5 +24,25 @@ public class EI_CurriculumDevelopmentController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void enterOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void urOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void backOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void suOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void deenterOnClick(ActionEvent event) {
+    }
     
 }

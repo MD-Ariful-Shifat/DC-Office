@@ -11,20 +11,18 @@
 <AnchorPane id="AnchorPane" prefHeight="499.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.AA_sendNoticeController">
    <children>
       <Label layoutX="13.0" layoutY="23.0" text="Issue notice for meeting" />
-      <TextArea layoutX="13.0" layoutY="54.0" prefHeight="61.0" prefWidth="509.0" />
-      <Button layoutX="13.0" layoutY="131.0" mnemonicParsing="false" text="Send" />
-      <Button layoutX="93.0" layoutY="131.0" mnemonicParsing="false" text="Cancel" />
-      <DatePicker layoutX="125.0" layoutY="174.0" prefHeight="31.0" prefWidth="227.0" />
+      <TextArea layoutX="13.0" layoutY="54.0" prefHeight="103.0" prefWidth="509.0" />
+      <DatePicker layoutX="125.0" layoutY="174.0" onAction="#dateOnClick" prefHeight="31.0" prefWidth="227.0" />
       <Label layoutX="12.0" layoutY="179.0" text="Date" />
       <Label layoutX="12.0" layoutY="220.0" text="Time" />
-      <ComboBox layoutX="125.0" layoutY="215.0" prefHeight="31.0" prefWidth="227.0" />
-      <ComboBox layoutX="125.0" layoutY="260.0" prefHeight="31.0" prefWidth="227.0" />
+      <ComboBox layoutX="125.0" layoutY="215.0" onAction="#timeOnClick" prefHeight="31.0" prefWidth="227.0" />
+      <ComboBox layoutX="125.0" layoutY="260.0" onAction="#roomnoOnClick" prefHeight="31.0" prefWidth="227.0" />
       <Label layoutX="13.0" layoutY="265.0" text="Room no." />
       <Label layoutX="12.0" layoutY="311.0" text="Available room" />
-      <RadioButton layoutX="125.0" layoutY="311.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="83.0" text="Yes" />
-      <RadioButton layoutX="269.0" layoutY="311.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="83.0" text="No" />
-      <Button layoutX="130.0" layoutY="358.0" mnemonicParsing="false" text="Send" />
-      <Button layoutX="268.0" layoutY="358.0" mnemonicParsing="false" text="Cancel" />
-      <Button layoutX="21.0" layoutY="418.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="83.0" text="&lt;&lt;Back" />
+      <RadioButton layoutX="125.0" layoutY="311.0" mnemonicParsing="false" onAction="#arOnClick" prefHeight="21.0" prefWidth="83.0" text="Yes" />
+      <RadioButton layoutX="269.0" layoutY="311.0" mnemonicParsing="false" onAction="#avnoOnClick" prefHeight="21.0" prefWidth="83.0" text="No" />
+      <Button layoutX="130.0" layoutY="358.0" mnemonicParsing="false" onAction="#sendOnClick" text="Send" />
+      <Button layoutX="268.0" layoutY="358.0" mnemonicParsing="false" onAction="#cancelOnClick" text="Cancel" />
+      <Button layoutX="21.0" layoutY="418.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="31.0" prefWidth="83.0" text="&lt;&lt;Back" />
    </children>
 </AnchorPane>

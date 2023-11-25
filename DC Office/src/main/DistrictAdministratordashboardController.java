@@ -102,7 +102,11 @@ public class DistrictAdministratordashboardController implements Initializable {
     @FXML
     private void viaOnClick(ActionEvent event) throws IOException {
         Parent root = null;
+<<<<<<< Updated upstream
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("AA_viaamail.fxml"));
+=======
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG2Teacherprofesionaldevlopmentpage.fxml"));
+>>>>>>> Stashed changes
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
         
@@ -117,23 +121,88 @@ public class DistrictAdministratordashboardController implements Initializable {
     }
 
     @FXML
-    private void userOnClick(ActionEvent event) {
+    private void userOnClick(ActionEvent event) throws IOException {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG2Teacherprofesionaldevlopmentpage.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+        
+        System.out.println(this.user.toString());
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
 
     @FXML
-    private void updateOnClick(ActionEvent event) {
+    private void updateOnClick(ActionEvent event) throws IOException {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG2Teacherprofesionaldevlopmentpage.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+        
+        System.out.println(this.user.toString());
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
 
     @FXML
-    private void travelOnClick(ActionEvent event) {
+    private void travelOnClick(ActionEvent event) throws IOException {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG2Teacherprofesionaldevlopmentpage.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+        
+        System.out.println(this.user.toString());
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
 
     @FXML
-    private void reportOnClick(ActionEvent event) {
+    private void reportOnClick(ActionEvent event) throws IOException {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG2Teacherprofesionaldevlopmentpage.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+        
+        System.out.println(this.user.toString());
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
 
     @FXML
-    private void promptOnClick(ActionEvent event) {
+    private void promptOnClick(ActionEvent event) throws IOException {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG2Teacherprofesionaldevlopmentpage.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+        
+        System.out.println(this.user.toString());
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
     
 }

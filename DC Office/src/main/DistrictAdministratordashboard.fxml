@@ -7,15 +7,15 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.DistrictAdministratordashboardController">
    <children>
-      <Button layoutX="25.0" layoutY="91.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="261.0" text="Send notice " textFill="#3510b9" />
-      <Button layoutX="25.0" layoutY="145.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="261.0" text="Via E-mail" textFill="#0b0bb2" />
-      <Button layoutX="25.0" layoutY="200.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="261.0" text="Update Calendar" textFill="#241db5" />
-      <Button layoutX="25.0" layoutY="252.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="261.0" text="Travel Arrangements" textFill="#100dc6" />
-      <Button layoutX="308.0" layoutY="91.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="261.0" text="Office Supplies" textFill="#11428c" />
-      <Button layoutX="308.0" layoutY="145.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="261.0" text="User Designation " textFill="#1e18b5" />
-      <Button layoutX="308.0" layoutY="200.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="261.0" text="Report Submitted/Received" textFill="#3d1bc3" />
-      <Button layoutX="308.0" layoutY="252.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="261.0" text="Prompt Users " textFill="#161cbf" />
-      <Button layoutX="25.0" layoutY="345.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="158.0" text="&lt;&lt;Back" textFill="#02171e" />
+      <Button layoutX="25.0" layoutY="91.0" mnemonicParsing="false" onAction="#sendnoticeOnClick" prefHeight="31.0" prefWidth="261.0" text="Send notice " textFill="#3510b9" />
+      <Button layoutX="25.0" layoutY="145.0" mnemonicParsing="false" onAction="#viaOnClick" prefHeight="31.0" prefWidth="261.0" text="Via E-mail" textFill="#0b0bb2" />
+      <Button layoutX="25.0" layoutY="200.0" mnemonicParsing="false" onAction="#updateOnClick" prefHeight="31.0" prefWidth="261.0" text="Update Calendar" textFill="#241db5" />
+      <Button layoutX="25.0" layoutY="252.0" mnemonicParsing="false" onAction="#travelOnClick" prefHeight="31.0" prefWidth="261.0" text="Travel Arrangements" textFill="#100dc6" />
+      <Button layoutX="308.0" layoutY="91.0" mnemonicParsing="false" onAction="#officeOnClick" prefHeight="31.0" prefWidth="261.0" text="Office Supplies" textFill="#11428c" />
+      <Button layoutX="308.0" layoutY="145.0" mnemonicParsing="false" onAction="#userOnClick" prefHeight="31.0" prefWidth="261.0" text="User Designation " textFill="#1e18b5" />
+      <Button layoutX="308.0" layoutY="200.0" mnemonicParsing="false" onAction="#reportOnClick" prefHeight="31.0" prefWidth="261.0" text="Report Submitted/Received" textFill="#3d1bc3" />
+      <Button layoutX="308.0" layoutY="252.0" mnemonicParsing="false" onAction="#promptOnClick" prefHeight="31.0" prefWidth="261.0" text="Prompt Users " textFill="#161cbf" />
+      <Button layoutX="25.0" layoutY="345.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="31.0" prefWidth="158.0" text="&lt;&lt;Back" textFill="#02171e" />
       <Label layoutX="142.0" layoutY="27.0" prefHeight="31.0" prefWidth="333.0" text="Administrative Assistant Dashboard" textAlignment="CENTER" textFill="#34b6d7" wrapText="true">
          <font>
             <Font name="System Bold" size="19.0" />

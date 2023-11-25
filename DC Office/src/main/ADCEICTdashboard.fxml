@@ -12,14 +12,14 @@
             <Font name="System Bold" size="29.0" />
          </font>
       </Label>
-      <Button layoutX="31.0" layoutY="124.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="468.0" text=" Education Improvement" />
-      <Button layoutX="515.0" layoutY="124.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="468.0" text=" Curriculum Development" />
-      <Button layoutX="31.0" layoutY="174.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="468.0" text="ICT " />
-      <Button layoutX="515.0" layoutY="174.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="468.0" text="E-government service" />
-      <Button layoutX="31.0" layoutY="228.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="468.0" text="Development activities of Curriculum Development" />
-      <Button layoutX="515.0" layoutY="228.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="468.0" text=" Digital literacy" />
-      <Button layoutX="35.0" layoutY="279.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="468.0" text="Teachers Training program" />
-      <Button layoutX="515.0" layoutY="279.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="468.0" text=" Educational Institutions" />
-      <Button layoutX="35.0" layoutY="357.0" mnemonicParsing="false" text="&lt;&lt;Back" />
+      <Button layoutX="31.0" layoutY="124.0" mnemonicParsing="false" onAction="#eduimOnClick" prefHeight="31.0" prefWidth="468.0" text=" Education Improvement" />
+      <Button layoutX="515.0" layoutY="124.0" mnemonicParsing="false" onAction="#cudeOnClick" prefHeight="31.0" prefWidth="468.0" text=" Curriculum Development" />
+      <Button layoutX="31.0" layoutY="174.0" mnemonicParsing="false" onAction="#ictOnClick" prefHeight="31.0" prefWidth="468.0" text="ICT " />
+      <Button layoutX="515.0" layoutY="174.0" mnemonicParsing="false" onAction="#egovOnClick" prefHeight="31.0" prefWidth="468.0" text="E-government service" />
+      <Button layoutX="31.0" layoutY="228.0" mnemonicParsing="false" onAction="#daocdOnClick" prefHeight="31.0" prefWidth="468.0" text="Development activities of Curriculum Development" />
+      <Button layoutX="515.0" layoutY="228.0" mnemonicParsing="false" onAction="#dihitalOnClick" prefHeight="31.0" prefWidth="468.0" text=" Digital literacy" />
+      <Button layoutX="35.0" layoutY="279.0" mnemonicParsing="false" onAction="#teacherOnClick" prefHeight="31.0" prefWidth="468.0" text="Teachers Training program" />
+      <Button layoutX="515.0" layoutY="279.0" mnemonicParsing="false" onAction="#educationalinsOnClick" prefHeight="31.0" prefWidth="468.0" text=" Educational Institutions" />
+      <Button layoutX="35.0" layoutY="357.0" mnemonicParsing="false" onAction="#backOnClick" text="&lt;&lt;Back" />
    </children>
 </AnchorPane>

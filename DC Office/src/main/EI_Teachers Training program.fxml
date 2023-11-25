@@ -7,9 +7,8 @@
 
 <AnchorPane id="AnchorPane" prefHeight="434.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.EI_TeachersTrainingProgramController">
    <children>
-      <Button layoutX="184.0" layoutY="56.0" mnemonicParsing="false" text="Teachers Training program" />
-      <Label layoutX="48.0" layoutY="110.0" text=" List of ICT based Training programs " />
-      <TextArea layoutX="48.0" layoutY="137.0" prefHeight="155.0" prefWidth="513.0" />
+      <Label layoutX="34.0" layoutY="67.0" text=" List of ICT based Training programs " />
+      <TextArea layoutX="34.0" layoutY="107.0" prefHeight="186.0" prefWidth="513.0" />
       <Button layoutX="259.0" layoutY="309.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="Done" />
       <Button layoutX="48.0" layoutY="368.0" mnemonicParsing="false" text="&lt;&lt;Back" />
    </children>

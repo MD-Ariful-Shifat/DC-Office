@@ -6,6 +6,8 @@ package main;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
@@ -22,5 +24,41 @@ public class AA_PromptcitizenController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void useridOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void passOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void listofcitizenOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void askqOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void enterOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void feedbackOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void cufOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void askforfeedOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void backOnClick(ActionEvent event) {
+    }
     
 }

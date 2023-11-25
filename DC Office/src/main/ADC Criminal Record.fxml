@@ -28,7 +28,7 @@
       </Button>
       <Button layoutX="550.0" layoutY="395.0" mnemonicParsing="false" onAction="#backOnClick" text="&lt;&lt; Back">
          <font>
-            <Font size="18.0" />
+            <Font size="14.0" />
          </font>
       </Button>
       <Text layoutX="76.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />

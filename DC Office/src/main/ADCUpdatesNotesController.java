@@ -4,6 +4,7 @@
  */
 package main;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -41,7 +42,7 @@ public class ADCUpdatesNotesController implements Initializable {
     }
 
     @FXML
-    private void backOnClick(ActionEvent event) {
+    private void backOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Dashboard.fxml"));
         root = (Parent) someLoader.load();
@@ -53,6 +54,7 @@ public class ADCUpdatesNotesController implements Initializable {
         Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         someStage.setScene(someScene);
         someStage.show();
+
     }
     
 }

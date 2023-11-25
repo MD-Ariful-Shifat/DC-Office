@@ -4,6 +4,7 @@
  */
 package main;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -31,7 +32,7 @@ public class SACDashboardController implements Initializable {
     }    
 
     @FXML
-    private void complainOnClick(ActionEvent event) {
+    private void complainOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SAC View complain.fxml"));
         root = (Parent) someLoader.load();
@@ -46,7 +47,7 @@ public class SACDashboardController implements Initializable {
     }
 
     @FXML
-    private void endorseOnClick(ActionEvent event) {
+    private void endorseOnClick(ActionEvent event) throws IOException {
          Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SAC Endorse Warrent.fxml"));
         root = (Parent) someLoader.load();
@@ -62,7 +63,7 @@ public class SACDashboardController implements Initializable {
     }
 
     @FXML
-    private void dischargeOnClick(ActionEvent event) {
+    private void dischargeOnClick(ActionEvent event) throws IOException {
          Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SAC Discharge Person.fxml"));
         root = (Parent) someLoader.load();
@@ -78,7 +79,7 @@ public class SACDashboardController implements Initializable {
     }
 
     @FXML
-    private void budgetOnClick(ActionEvent event) {
+    private void budgetOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SAC View Budget From ADC.fxml"));
         root = (Parent) someLoader.load();
@@ -97,7 +98,7 @@ public class SACDashboardController implements Initializable {
     }
 
     @FXML
-    private void taxreportOnClick(ActionEvent event) {
+    private void taxreportOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SAC Tax Report.fxml"));
         root = (Parent) someLoader.load();
@@ -112,7 +113,7 @@ public class SACDashboardController implements Initializable {
     }
 
     @FXML
-    private void medicalOnClick(ActionEvent event) {
+    private void medicalOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SAC Medical Update.fxml"));
         root = (Parent) someLoader.load();
@@ -127,7 +128,7 @@ public class SACDashboardController implements Initializable {
     }
 
     @FXML
-    private void backOnClick(ActionEvent event) {
+    private void backOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SignIn Page.fxml"));
         root = (Parent) someLoader.load();

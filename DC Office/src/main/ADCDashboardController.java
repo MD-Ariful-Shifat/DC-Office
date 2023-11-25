@@ -50,9 +50,9 @@ public class ADCDashboardController implements Initializable {
     }
 
     @FXML
-    private void localOnClick(ActionEvent event) {
+    private void localOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Updates Notes.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC updates notes.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
@@ -65,9 +65,9 @@ public class ADCDashboardController implements Initializable {
     }
 
     @FXML
-    private void bangladeshOnClick(ActionEvent event) {
+    private void bangladeshOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC View Law.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC View law.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
@@ -80,7 +80,7 @@ public class ADCDashboardController implements Initializable {
     }
 
     @FXML
-    private void gdOnClick(ActionEvent event) {
+    private void gdOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Criminal Record.fxml"));
         root = (Parent) someLoader.load();
@@ -95,7 +95,7 @@ public class ADCDashboardController implements Initializable {
     }
 
     @FXML
-    private void taxOnClick(ActionEvent event) {
+    private void taxOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Tax report.fxml"));
         root = (Parent) someLoader.load();
@@ -110,7 +110,7 @@ public class ADCDashboardController implements Initializable {
     }
 
     @FXML
-    private void educationOnClick(ActionEvent event) {
+    private void educationOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Educational Institute.fxml"));
         root = (Parent) someLoader.load();
@@ -125,7 +125,7 @@ public class ADCDashboardController implements Initializable {
     }
 
     @FXML
-    private void socialOnClick(ActionEvent event) {
+    private void socialOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Organizing.fxml"));
         root = (Parent) someLoader.load();
@@ -140,7 +140,7 @@ public class ADCDashboardController implements Initializable {
     }
 
     @FXML
-    private void appointmentOnClick(ActionEvent event) {
+    private void appointmentOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Appointments and meetings.fxml"));
         root = (Parent) someLoader.load();

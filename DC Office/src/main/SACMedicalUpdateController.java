@@ -4,6 +4,7 @@
  */
 package main;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -45,7 +46,7 @@ public class SACMedicalUpdateController implements Initializable {
     }
 
     @FXML
-    private void backOnClick(ActionEvent event) {
+    private void backOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SAC Dashboard.fxml"));
         root = (Parent) someLoader.load();

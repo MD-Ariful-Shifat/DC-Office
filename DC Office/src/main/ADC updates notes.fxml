@@ -21,7 +21,7 @@
       </Button>
       <Button defaultButton="true" layoutX="646.0" layoutY="461.0" mnemonicParsing="false" onAction="#backOnClick" text="&lt;&lt; Back">
          <font>
-            <Font size="18.0" />
+            <Font size="14.0" />
          </font>
       </Button>
       <TextArea fx:id="outputTextArea" layoutX="537.0" layoutY="129.0" prefHeight="302.0" prefWidth="200.0" />

@@ -4,9 +4,18 @@
  */
 package main;
 
+import Model.SACEB;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -15,6 +24,7 @@ import javafx.fxml.Initializable;
  */
 public class SACEBeducationboxcurriculumupdateController implements Initializable {
 
+ private SACEB user;
     /**
      * Initializes the controller class.
      */
@@ -22,5 +32,30 @@ public class SACEBeducationboxcurriculumupdateController implements Initializabl
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    public SACEB getUser() {
+        return user;
+    }
+
+    public void setUser(SACEB user) {
+        this.user = user;
+    }  
+
+    @FXML
+    private void backOnClick(ActionEvent event) throws IOException {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBdashboard.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+        
+        System.out.println(this.user.toString());
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
+    }
     
 }

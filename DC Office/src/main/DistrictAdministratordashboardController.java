@@ -4,6 +4,7 @@
  */
 package main;
 
+import Model.AA;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -24,6 +25,12 @@ import javafx.stage.Stage;
 public class DistrictAdministratordashboardController implements Initializable {
 
     /**
+ public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }       * Initializes the controller class.
+     */
+    private AA user;
+    /**
      * Initializes the controller class.
      */
     @Override
@@ -31,9 +38,17 @@ public class DistrictAdministratordashboardController implements Initializable {
         // TODO
     }    
 
+    public AA getUser() {
+        return user;
+    }
+
+    public void setUser(AA user) {
+        this.user = user;
+    } 
+
     @FXML
     private void sendnoticeOnClick(ActionEvent event) throws IOException {
-        /*Parent root = null;
+        Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("AA_send notice.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
@@ -41,12 +56,12 @@ public class DistrictAdministratordashboardController implements Initializable {
         System.out.println(this.user.toString());
 
         /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);
+        p.setUser(this.user);*/
 
         Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         someStage.setScene(someScene);
         someStage.show(); 
-        */
+        
 
     }
 
@@ -55,7 +70,20 @@ public class DistrictAdministratordashboardController implements Initializable {
     }
 
     @FXML
-    private void backOnClick(ActionEvent event) {
+    private void backOnClick(ActionEvent event) throws IOException {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SignIn Page.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+        
+        System.out.println(this.user.toString());
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
 
     @FXML

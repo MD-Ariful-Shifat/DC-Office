@@ -6,6 +6,7 @@ package main;
 
 import Model.DC;
 import Model.SAC;
+import Model.AA;
 import Model.User;
 import java.io.File;
 import java.io.FileInputStream;
@@ -49,7 +50,7 @@ public class SignInPageController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        String[] users = {"DC", "SAC"};
+        String[] users = {"DC", "SAC", "AA", "EI", "DM", "SACEB", "UNO", "DR"};
         userComboBox.getItems().addAll(users);
     }    
 
@@ -89,6 +90,33 @@ public class SignInPageController implements Initializable {
             someStage.setScene(someScene);
             someStage.show();
         }
+        else if (usertype.equals("AA")){
+            Parent root = null;
+            FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DistrictAdministratordashboard.fxml"));
+            root = (Parent) someLoader.load();
+            Scene someScene = new Scene(root);
+
+            /*SACDashboardController p = someLoader.getController();
+            p.setUser((SAC) this.user);*/
+
+            Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            someStage.setScene(someScene);
+            someStage.show();
+        }
+        else if (usertype.equals("EI")){
+            Parent root = null;
+            FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADCEICTdashboard.fxml"));
+            root = (Parent) someLoader.load();
+            Scene someScene = new Scene(root);
+
+            /*SACDashboardController p = someLoader.getController();
+            p.setUser((SAC) this.user);*/
+
+            Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            someStage.setScene(someScene);
+            someStage.show();
+        }
+        
     }
 
     @FXML

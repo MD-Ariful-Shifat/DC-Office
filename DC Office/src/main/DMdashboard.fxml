@@ -11,9 +11,9 @@
       <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="78.0" mnemonicParsing="false" onAction="#dataOnClick" prefHeight="25.0" prefWidth="265.0" text="Data and reports" />
       <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="209.0" mnemonicParsing="false" onAction="#infrastructureOnClick" prefHeight="25.0" prefWidth="265.0" text=" Infrastructure Development" />
       <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="167.0" mnemonicParsing="false" onAction="#legalOnClick" prefHeight="25.0" prefWidth="265.0" text="Legal and Regulatory Information" />
-      <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="253.0" mnemonicParsing="false" onAction="#gdOnClick" prefHeight="25.0" prefWidth="265.0" text="GD and FIR" />
-      <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="333.0" mnemonicParsing="false" onAction="#citizenOnClick" prefHeight="25.0" prefWidth="265.0" text="  Citizen complaint" />
-      <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="297.0" mnemonicParsing="false" onAction="#fineOnClick" prefHeight="25.0" prefWidth="265.0" text="Fine" />
+      <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="253.0" mnemonicParsing="false" onAction="#legalandOnClick" prefHeight="25.0" prefWidth="265.0" text="Legal and Regulatory Information" />
+      <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="333.0" mnemonicParsing="false" onAction="#acceseeteOnClick" prefHeight="25.0" prefWidth="265.0" text="Access resources related to education" />
+      <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="297.0" mnemonicParsing="false" onAction="#infradeveOnClick" prefHeight="25.0" prefWidth="265.0" text=" Infrastructure Development" />
       <Button defaultButton="true" layoutX="469.0" layoutY="346.0" mnemonicParsing="false" onAction="#backOnClcik" text="Back">
          <font>
             <Font size="14.0" />

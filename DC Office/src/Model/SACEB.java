@@ -4,6 +4,13 @@
  */
 package Model;
 
+<<<<<<< HEAD
+/**
+ *
+ * @author sadia
+ */
+public class SACEB {
+=======
 import java.io.Serializable;
 import java.time.LocalDate;
 
@@ -24,5 +31,6 @@ public class SACEB extends User implements Serializable{
     }
     
     
+>>>>>>> 87888c5df118c19f3b0948846635f11dec22e405
     
 }

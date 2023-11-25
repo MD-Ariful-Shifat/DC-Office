@@ -4,6 +4,13 @@
  */
 package Model;
 
+<<<<<<< HEAD
+/**
+ *
+ * @author sadia
+ */
+public class DM {
+=======
 import java.io.Serializable;
 import java.time.LocalDate;
 
@@ -22,6 +29,7 @@ public class DM extends User implements Serializable{
     public String toString() {
         return "DM{" + "userID=" + userID + ", password=" + password + ", name=" + name + ", address=" + address + ", contact=" + contact + ", DOB=" + DOB + ", area=" + area + '}';
     }
+>>>>>>> 87888c5df118c19f3b0948846635f11dec22e405
     
     
     

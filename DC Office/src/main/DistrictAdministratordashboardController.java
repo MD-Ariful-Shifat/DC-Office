@@ -61,5 +61,25 @@ public class DistrictAdministratordashboardController implements Initializable {
     @FXML
     private void viaOnClick(ActionEvent event) {
     }
+
+    @FXML
+    private void userOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void updateOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void travelOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void reportOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void promptOnClick(ActionEvent event) {
+    }
     
 }

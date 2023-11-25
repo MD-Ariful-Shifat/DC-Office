@@ -6,6 +6,8 @@ package main;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
@@ -22,5 +24,21 @@ public class EI_ICTController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void backOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void rOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void dOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void cdOnClick(ActionEvent event) {
+    }
     
 }

@@ -7,16 +7,16 @@
 
 <AnchorPane id="AnchorPane" prefHeight="587.0" prefWidth="574.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.EI_CurriculumDevelopmentController">
    <children>
-      <Button layoutX="209.0" layoutY="55.0" mnemonicParsing="false" text="Enter" />
+      <Button layoutX="209.0" layoutY="55.0" mnemonicParsing="false" onAction="#enterOnClick" text="Enter" />
       <Label layoutX="47.0" layoutY="205.0" text="List of Curriculum activities" />
       <Label layoutX="331.0" layoutY="205.0" prefHeight="21.0" prefWidth="200.0" text="List of Reports Development" />
       <TextArea layoutX="36.0" layoutY="237.0" prefHeight="200.0" prefWidth="200.0" />
       <TextArea layoutX="331.0" layoutY="237.0" prefHeight="200.0" prefWidth="200.0" />
-      <Button layoutX="375.0" layoutY="448.0" mnemonicParsing="false" text="Update Reports" />
-      <Button layoutX="36.0" layoutY="537.0" mnemonicParsing="false" text="&lt;&lt;Back" />
-      <Button layoutX="385.0" layoutY="493.0" mnemonicParsing="false" text="Save Update" />
+      <Button layoutX="375.0" layoutY="448.0" mnemonicParsing="false" onAction="#urOnClick" text="Update Reports" />
+      <Button layoutX="36.0" layoutY="537.0" mnemonicParsing="false" onAction="#backOnClick" text="&lt;&lt;Back" />
+      <Button layoutX="385.0" layoutY="493.0" mnemonicParsing="false" onAction="#suOnClick" text="Save Update" />
       <Label layoutX="33.0" layoutY="60.0" prefHeight="21.0" prefWidth="150.0" text="Curriculum activities" />
       <Label layoutX="36.0" layoutY="124.0" text="Development" />
-      <Button layoutX="209.0" layoutY="119.0" mnemonicParsing="false" text="Enter" />
+      <Button layoutX="209.0" layoutY="119.0" mnemonicParsing="false" onAction="#deenterOnClick" text="Enter" />
    </children>
 </AnchorPane>

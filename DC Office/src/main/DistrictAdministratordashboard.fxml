@@ -12,7 +12,7 @@
       <Button layoutX="25.0" layoutY="200.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="261.0" text="Update Calendar" textFill="#241db5" />
       <Button layoutX="25.0" layoutY="252.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="261.0" text="Travel Arrangements" textFill="#100dc6" />
       <Button layoutX="308.0" layoutY="91.0" mnemonicParsing="false" onAction="#officeOnClick" prefHeight="31.0" prefWidth="261.0" text="Office Supplies" textFill="#11428c" />
-      <Button layoutX="308.0" layoutY="145.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="261.0" text="User Designation " textFill="#1e18b5" />
+      <Button layoutX="308.0" layoutY="145.0" mnemonicParsing="false" onAction="#userOnClick" prefHeight="31.0" prefWidth="261.0" text="User Designation " textFill="#1e18b5" />
       <Button layoutX="308.0" layoutY="200.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="261.0" text="Report Submitted/Received" textFill="#3d1bc3" />
       <Button layoutX="308.0" layoutY="252.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="261.0" text="Prompt Users " textFill="#161cbf" />
       <Button layoutX="25.0" layoutY="345.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="31.0" prefWidth="158.0" text="&lt;&lt;Back" textFill="#02171e" />

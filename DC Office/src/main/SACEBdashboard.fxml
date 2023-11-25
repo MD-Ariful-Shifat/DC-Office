@@ -7,15 +7,15 @@
    <children>
       <AnchorPane layoutX="97.0" layoutY="15.0" prefHeight="350.0" prefWidth="409.0">
          <children>
-            <Button cancelButton="true" defaultButton="true" layoutX="86.0" layoutY="21.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="238.0" text="Education" />
-            <Button cancelButton="true" defaultButton="true" layoutX="86.0" layoutY="61.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="238.0" text="Student enrollment and retention" />
-            <Button cancelButton="true" defaultButton="true" layoutX="86.0" layoutY="99.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="238.0" text=" Teacher Professional Development" />
-            <Button cancelButton="true" defaultButton="true" layoutX="86.0" layoutY="135.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="238.0" text="Curriculum Enhancement" />
-            <Button cancelButton="true" defaultButton="true" layoutX="86.0" layoutY="175.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="238.0" text=" Special Education Programs" />
-            <Button cancelButton="true" defaultButton="true" layoutX="86.0" layoutY="218.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="238.0" text="Community Engagement" />
-            <Button cancelButton="true" defaultButton="true" layoutX="86.0" layoutY="257.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="238.0" text="Resource Allocation" />
-            <Button cancelButton="true" defaultButton="true" layoutX="86.0" layoutY="297.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="238.0" text="Promote Technology Integration" />
-            <Button layoutX="343.0" layoutY="310.0" mnemonicParsing="false" text="Back" />
+            <Button cancelButton="true" defaultButton="true" layoutX="86.0" layoutY="21.0" mnemonicParsing="false" onAction="#educationOnClick" prefHeight="25.0" prefWidth="238.0" text="Education" />
+            <Button cancelButton="true" defaultButton="true" layoutX="86.0" layoutY="61.0" mnemonicParsing="false" onAction="#studentenrollmentOnClick" prefHeight="25.0" prefWidth="238.0" text="Student enrollment and retention" />
+            <Button cancelButton="true" defaultButton="true" layoutX="86.0" layoutY="99.0" mnemonicParsing="false" onAction="#teacherprofOnClick" prefHeight="25.0" prefWidth="238.0" text=" Teacher Professional Development" />
+            <Button cancelButton="true" defaultButton="true" layoutX="86.0" layoutY="135.0" mnemonicParsing="false" onAction="#curriculumenOnClick" prefHeight="25.0" prefWidth="238.0" text="Curriculum Enhancement" />
+            <Button cancelButton="true" defaultButton="true" layoutX="86.0" layoutY="175.0" mnemonicParsing="false" onAction="#specialeduOnClick" prefHeight="25.0" prefWidth="238.0" text=" Special Education Programs" />
+            <Button cancelButton="true" defaultButton="true" layoutX="86.0" layoutY="218.0" mnemonicParsing="false" onAction="#communityengOnClick" prefHeight="25.0" prefWidth="238.0" text="Community Engagement" />
+            <Button cancelButton="true" defaultButton="true" layoutX="86.0" layoutY="257.0" mnemonicParsing="false" onAction="#resourceallocationOnClick" prefHeight="25.0" prefWidth="238.0" text="Resource Allocation" />
+            <Button cancelButton="true" defaultButton="true" layoutX="86.0" layoutY="297.0" mnemonicParsing="false" onAction="#promotetecintOnClick" prefHeight="25.0" prefWidth="238.0" text="Promote Technology Integration" />
+            <Button layoutX="343.0" layoutY="310.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
          </children>
       </AnchorPane>
    </children>

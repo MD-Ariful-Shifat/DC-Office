@@ -116,6 +116,20 @@ public class SignInPageController implements Initializable {
             someStage.setScene(someScene);
             someStage.show();
         }
+        else if (usertype.equals("")){
+            Parent root = null;
+            FXMLLoader someLoader = new FXMLLoader(getClass().getResource("dashboard.fxml"));
+            root = (Parent) someLoader.load();
+            Scene someScene = new Scene(root);
+
+            /*SACDashboardController p = someLoader.getController();
+            p.setUser((SAC) this.user);*/
+
+            Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            someStage.setScene(someScene);
+            someStage.show();
+        }
+        
         
     }
 

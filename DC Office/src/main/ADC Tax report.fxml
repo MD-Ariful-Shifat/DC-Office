@@ -7,12 +7,12 @@
 
 <AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ADCTaxReportController">
    <children>
-      <Button defaultButton="true" layoutX="62.0" layoutY="207.0" mnemonicParsing="false" text="Download Pdf">
+      <Button defaultButton="true" layoutX="62.0" layoutY="207.0" mnemonicParsing="false" onAction="#downloadOnClick" text="Download Pdf">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="57.0" layoutY="446.0" mnemonicParsing="false" text="&lt;&lt; Back">
+      <Button layoutX="57.0" layoutY="446.0" mnemonicParsing="false" onAction="#backOnClick" text="&lt;&lt; Back">
          <font>
             <Font size="18.0" />
          </font>

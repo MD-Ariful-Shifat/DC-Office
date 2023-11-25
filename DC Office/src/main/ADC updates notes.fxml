@@ -13,17 +13,17 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Text>
-      <TextArea layoutX="63.0" layoutY="129.0" prefHeight="302.0" prefWidth="434.0" />
-      <Button defaultButton="true" layoutX="63.0" layoutY="461.0" mnemonicParsing="false" text="Save">
+      <TextArea fx:id="inputTextArea" layoutX="63.0" layoutY="129.0" prefHeight="302.0" prefWidth="434.0" />
+      <Button defaultButton="true" layoutX="63.0" layoutY="461.0" mnemonicParsing="false" onAction="#saveOnClick" text="Save">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button defaultButton="true" layoutX="646.0" layoutY="461.0" mnemonicParsing="false" text="&lt;&lt; Back">
+      <Button defaultButton="true" layoutX="646.0" layoutY="461.0" mnemonicParsing="false" onAction="#backOnClick" text="&lt;&lt; Back">
          <font>
-            <Font size="18.0" />
+            <Font size="14.0" />
          </font>
       </Button>
-      <TextArea layoutX="537.0" layoutY="129.0" prefHeight="302.0" prefWidth="200.0" />
+      <TextArea fx:id="outputTextArea" layoutX="537.0" layoutY="129.0" prefHeight="302.0" prefWidth="200.0" />
    </children>
 </AnchorPane>

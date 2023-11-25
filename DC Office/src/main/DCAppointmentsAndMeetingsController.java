@@ -14,6 +14,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -21,7 +24,16 @@ import javafx.stage.Stage;
  *
  * @author USER
  */
-public class ADCViewLawController implements Initializable {
+public class DCAppointmentsAndMeetingsController implements Initializable {
+
+    @FXML
+    private TextArea inputTextArea;
+    @FXML
+    private TextArea outputTextArea;
+    @FXML
+    private TextField appointTextField;
+    @FXML
+    private DatePicker datePicker;
 
     /**
      * Initializes the controller class.
@@ -32,7 +44,11 @@ public class ADCViewLawController implements Initializable {
     }    
 
     @FXML
-    private void downloadOnClick(ActionEvent event) {
+    private void saveOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void deleteOnClick(ActionEvent event) {
     }
 
     @FXML

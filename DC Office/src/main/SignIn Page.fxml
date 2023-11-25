@@ -28,11 +28,11 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <TextField layoutX="304.0" layoutY="146.0" prefHeight="25.0" prefWidth="244.0" />
-            <TextField layoutX="304.0" layoutY="202.0" prefHeight="25.0" prefWidth="244.0" />
-            <ComboBox layoutX="564.0" layoutY="146.0" prefWidth="150.0" promptText="Select User:" />
-            <Button defaultButton="true" layoutX="168.0" layoutY="297.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="163.0" text="Sign In" />
-            <Button defaultButton="true" layoutX="364.0" layoutY="297.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="163.0" text="Sign Up" />
+            <TextField fx:id="idTextField" layoutX="304.0" layoutY="146.0" prefHeight="25.0" prefWidth="244.0" />
+            <TextField fx:id="passTextField" layoutX="304.0" layoutY="202.0" prefHeight="25.0" prefWidth="244.0" />
+            <ComboBox fx:id="userComboBox" layoutX="564.0" layoutY="146.0" prefWidth="150.0" promptText="Select User:" />
+            <Button defaultButton="true" layoutX="168.0" layoutY="297.0" mnemonicParsing="false" onAction="#signInOnClick" prefHeight="56.0" prefWidth="163.0" text="Sign In" />
+            <Button defaultButton="true" layoutX="364.0" layoutY="297.0" mnemonicParsing="false" onAction="#signupOnClick" prefHeight="56.0" prefWidth="163.0" text="Sign Up" />
             <Label layoutX="304.0" layoutY="244.0" prefHeight="25.0" prefWidth="110.0" text="Forgot Password">
                <font>
                   <Font size="14.0" />

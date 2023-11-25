@@ -14,6 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 /**
@@ -21,7 +22,12 @@ import javafx.stage.Stage;
  *
  * @author USER
  */
-public class ADCViewLawController implements Initializable {
+public class SACMedicalUpdateController implements Initializable {
+
+    @FXML
+    private TextArea inputTextArea;
+    @FXML
+    private TextArea outputTextArea;
 
     /**
      * Initializes the controller class.
@@ -32,13 +38,17 @@ public class ADCViewLawController implements Initializable {
     }    
 
     @FXML
-    private void downloadOnClick(ActionEvent event) {
+    private void saveOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void deleteOnClick(ActionEvent event) {
     }
 
     @FXML
     private void backOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Dashboard.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SAC Dashboard.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 

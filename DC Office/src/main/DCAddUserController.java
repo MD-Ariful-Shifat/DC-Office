@@ -22,7 +22,7 @@ import javafx.stage.Stage;
  *
  * @author USER
  */
-public class ADCAddUserController implements Initializable {
+public class DCAddUserController implements Initializable {
     private DC user;
 
     public DC getUser() {

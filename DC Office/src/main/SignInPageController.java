@@ -66,11 +66,11 @@ public class SignInPageController implements Initializable {
             return;
         } else if (usertype.equals("DC")) {
             Parent root = null;
-            FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Dashboard.fxml"));
+            FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Dashboard.fxml"));
             root = (Parent) someLoader.load();
             Scene someScene = new Scene(root);
 
-            ADCDashboardController p = someLoader.getController();
+            DCDashboardController p = someLoader.getController();
             p.setUser((DC) loggedIn);
 
             Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();

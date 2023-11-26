@@ -22,10 +22,10 @@ import javafx.stage.Stage;
  *
  * @author USER
  */
-public class ADCEducationalInstituteController implements Initializable {
+public class DCOrganizingController implements Initializable {
 
     @FXML
-    private TextArea eduupdateTextArea;
+    private TextArea inputTextArea;
     @FXML
     private TextArea outputTextArea;
 
@@ -48,7 +48,7 @@ public class ADCEducationalInstituteController implements Initializable {
     @FXML
     private void backOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Dashboard.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Dashboard.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 

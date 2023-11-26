@@ -14,7 +14,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 /**
@@ -22,12 +21,7 @@ import javafx.stage.Stage;
  *
  * @author USER
  */
-public class ADCUpdatesNotesController implements Initializable {
-
-    @FXML
-    private TextArea inputTextArea;
-    @FXML
-    private TextArea outputTextArea;
+public class DCViewLawController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -38,13 +32,13 @@ public class ADCUpdatesNotesController implements Initializable {
     }    
 
     @FXML
-    private void saveOnClick(ActionEvent event) {
+    private void downloadOnClick(ActionEvent event) {
     }
 
     @FXML
     private void backOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Dashboard.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Dashboard.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
@@ -54,7 +48,6 @@ public class ADCUpdatesNotesController implements Initializable {
         Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         someStage.setScene(someScene);
         someStage.show();
-
     }
     
 }

@@ -22,7 +22,7 @@ import javafx.stage.Stage;
  *
  * @author USER
  */
-public class ADCDashboardController implements Initializable {
+public class DCDashboardController implements Initializable {
     private DC user;
     /**
      * Initializes the controller class.
@@ -50,8 +50,8 @@ public class ADCDashboardController implements Initializable {
         
         System.out.println(this.user.toString());
 
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
+        /*SignInPageController p = someLoader.getController();
+        p.setUser( this.user);*/
 
         Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         someStage.setScene(someScene);
@@ -63,7 +63,7 @@ public class ADCDashboardController implements Initializable {
     @FXML
     private void localOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC updates notes.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC updates notes.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
@@ -78,7 +78,7 @@ public class ADCDashboardController implements Initializable {
     @FXML
     private void bangladeshOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC View law.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC View law.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
@@ -93,7 +93,7 @@ public class ADCDashboardController implements Initializable {
     @FXML
     private void gdOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Criminal Record.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Criminal Record.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
@@ -109,7 +109,7 @@ public class ADCDashboardController implements Initializable {
     @FXML
     private void educationOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Educational Institute.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Educational Institute.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
@@ -124,7 +124,7 @@ public class ADCDashboardController implements Initializable {
     @FXML
     private void socialOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Organizing.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Organizing.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
@@ -139,7 +139,7 @@ public class ADCDashboardController implements Initializable {
     @FXML
     private void appointmentOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Appointments and meetings.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Appointments and meetings.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
@@ -154,11 +154,11 @@ public class ADCDashboardController implements Initializable {
     @FXML
     private void addOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Add User.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Add User.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
-        ADCAddUserController p = someLoader.getController();
+        DCAddUserController p = someLoader.getController();
         p.setUser( this.user);
 
         Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();

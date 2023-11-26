@@ -120,7 +120,7 @@ public class DistrictAdministratordashboardController implements Initializable {
     @FXML
     private void userOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG2Teacherprofesionaldevlopmentpage.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("AA_Generate new user.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
         
@@ -137,7 +137,7 @@ public class DistrictAdministratordashboardController implements Initializable {
     @FXML
     private void updateOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG2Teacherprofesionaldevlopmentpage.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("AA_updatingcalender.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
         
@@ -154,7 +154,7 @@ public class DistrictAdministratordashboardController implements Initializable {
     @FXML
     private void travelOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG2Teacherprofesionaldevlopmentpage.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("AA_travelarrangements.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
         
@@ -171,7 +171,7 @@ public class DistrictAdministratordashboardController implements Initializable {
     @FXML
     private void reportOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG2Teacherprofesionaldevlopmentpage.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("AA_Report Submitted Received.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
         
@@ -188,7 +188,7 @@ public class DistrictAdministratordashboardController implements Initializable {
     @FXML
     private void promptOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG2Teacherprofesionaldevlopmentpage.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("AA_Pomptcitizen.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
         

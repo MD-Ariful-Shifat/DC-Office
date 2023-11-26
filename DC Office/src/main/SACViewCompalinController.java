@@ -4,6 +4,7 @@
  */
 package main;
 
+import Model.SAC;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -28,6 +29,16 @@ public class SACViewCompalinController implements Initializable {
     private TextArea inputTextArea;
     @FXML
     private TextArea outputTextArea;
+    private SAC user;
+
+    public SAC getUser() {
+        return user;
+    }
+
+    public void setUser(SAC user) {
+        this.user = user;
+    }
+    
 
     /**
      * Initializes the controller class.

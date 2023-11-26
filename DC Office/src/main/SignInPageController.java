@@ -83,8 +83,8 @@ public class SignInPageController implements Initializable {
             root = (Parent) someLoader.load();
             Scene someScene = new Scene(root);
 
-            /*SACDashboardController p = someLoader.getController();
-            p.setUser((SAC) this.user);*/
+            SACDashboardController p = someLoader.getController();
+            p.setUser((SAC) loggedIn);
 
             Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
             someStage.setScene(someScene);

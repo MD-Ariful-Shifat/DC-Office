@@ -4,6 +4,7 @@
  */
 package main;
 
+import Model.DC;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -21,7 +22,16 @@ import javafx.stage.Stage;
  *
  * @author USER
  */
-public class ADCTaxReportController implements Initializable {
+public class ADCAddUserController implements Initializable {
+    private DC user;
+
+    public DC getUser() {
+        return user;
+    }
+
+    public void setUser(DC user) {
+        this.user = user;
+    }
 
     /**
      * Initializes the controller class.

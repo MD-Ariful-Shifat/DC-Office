@@ -105,20 +105,6 @@ public class ADCDashboardController implements Initializable {
         someStage.show();
     }
 
-    @FXML
-    private void taxOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Tax report.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
-    }
 
     @FXML
     private void educationOnClick(ActionEvent event) throws IOException {
@@ -159,6 +145,21 @@ public class ADCDashboardController implements Initializable {
 
         /*SomeFXMLController p = someLoader.getController();
         p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
+    }
+
+    @FXML
+    private void addOnClick(ActionEvent event) throws IOException {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Add User.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+
+        ADCAddUserController p = someLoader.getController();
+        p.setUser( this.user);
 
         Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         someStage.setScene(someScene);

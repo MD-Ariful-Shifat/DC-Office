@@ -15,6 +15,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -24,6 +26,20 @@ import javafx.stage.Stage;
  */
 public class DCAddUserController implements Initializable {
     private DC user;
+    @FXML
+    private TextField nameTextField;
+    @FXML
+    private TextField idTextField;
+    @FXML
+    private TextField contactTextField;
+    @FXML
+    private TextField emailTextField;
+    @FXML
+    private TextField addressTextField;
+    @FXML
+    private TextField dobTextField;
+    @FXML
+    private TextArea inputTextField;
 
     public DC getUser() {
         return user;
@@ -41,9 +57,6 @@ public class DCAddUserController implements Initializable {
         // TODO
     }    
 
-    @FXML
-    private void downloadOnClick(ActionEvent event) {
-    }
 
     @FXML
     private void backOnClick(ActionEvent event) throws IOException {

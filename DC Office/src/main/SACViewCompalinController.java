@@ -25,10 +25,6 @@ import javafx.stage.Stage;
  */
 public class SACViewCompalinController implements Initializable {
 
-    @FXML
-    private TextArea inputTextArea;
-    @FXML
-    private TextArea outputTextArea;
     private SAC user;
 
     public SAC getUser() {
@@ -48,13 +44,6 @@ public class SACViewCompalinController implements Initializable {
         // TODO
     }    
 
-    @FXML
-    private void saveOnClick(ActionEvent event) {
-    }
-
-    @FXML
-    private void deleteOnClick(ActionEvent event) {
-    }
 
     @FXML
     private void backOnClick(ActionEvent event) throws IOException {

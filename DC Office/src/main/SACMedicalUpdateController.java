@@ -24,10 +24,6 @@ import javafx.stage.Stage;
  */
 public class SACMedicalUpdateController implements Initializable {
 
-    @FXML
-    private TextArea inputTextArea;
-    @FXML
-    private TextArea outputTextArea;
 
     /**
      * Initializes the controller class.

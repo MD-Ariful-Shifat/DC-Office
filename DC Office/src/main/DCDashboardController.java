@@ -165,5 +165,9 @@ public class DCDashboardController implements Initializable {
         someStage.setScene(someScene);
         someStage.show();
     }
+
+    @FXML
+    private void meetingOnClick(ActionEvent event) {
+    }
     
 }

@@ -17,8 +17,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <TextArea fx:id="inputTextArea" layoutX="42.0" layoutY="205.0" prefHeight="177.0" prefWidth="432.0" />
-            <TextArea fx:id="outputTextArea" layoutX="512.0" layoutY="125.0" prefHeight="257.0" prefWidth="200.0" />
+            <TextArea fx:id="inputTextArea" layoutX="42.0" layoutY="205.0" prefHeight="177.0" prefWidth="657.0" />
             <Button layoutX="42.0" layoutY="429.0" mnemonicParsing="false" onAction="#saveOnClick" text="Save">
                <font>
                   <Font size="14.0" />

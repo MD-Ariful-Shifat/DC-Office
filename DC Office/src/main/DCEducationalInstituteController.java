@@ -24,10 +24,6 @@ import javafx.stage.Stage;
  */
 public class DCEducationalInstituteController implements Initializable {
 
-    @FXML
-    private TextArea eduupdateTextArea;
-    @FXML
-    private TextArea outputTextArea;
 
     /**
      * Initializes the controller class.

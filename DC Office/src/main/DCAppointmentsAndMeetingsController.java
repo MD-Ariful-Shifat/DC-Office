@@ -29,8 +29,6 @@ public class DCAppointmentsAndMeetingsController implements Initializable {
     @FXML
     private TextArea inputTextArea;
     @FXML
-    private TextArea outputTextArea;
-    @FXML
     private TextField appointTextField;
     @FXML
     private DatePicker datePicker;

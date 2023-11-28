@@ -4,6 +4,7 @@
  */
 package main;
 
+import Model.SAC;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -23,6 +24,15 @@ import javafx.stage.Stage;
  */
 public class SACDashboardController implements Initializable {
 
+    private SAC user;
+
+    public SAC getUser() {
+        return user;
+    }
+
+    public void setUser(SAC user) {
+        this.user = user;
+    }
     /**
      * Initializes the controller class.
      */
@@ -34,12 +44,12 @@ public class SACDashboardController implements Initializable {
     @FXML
     private void complainOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SAC View complain.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SAC View compalin.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
+        SACViewCompalinController p = someLoader.getController();
+        p.setUser(this.user);
 
         Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         someStage.setScene(someScene);
@@ -94,7 +104,18 @@ public class SACDashboardController implements Initializable {
     }
 
     @FXML
-    private void checkOnClick(ActionEvent event) {
+    private void checkOnClick(ActionEvent event) throws IOException{
+             Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SAC Submit Budget.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
 
     @FXML

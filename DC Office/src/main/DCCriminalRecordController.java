@@ -14,6 +14,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -21,7 +24,16 @@ import javafx.stage.Stage;
  *
  * @author USER
  */
-public class ADCViewLawController implements Initializable {
+public class DCCriminalRecordController implements Initializable {
+
+    @FXML
+    private TextArea outputTextArea;
+    @FXML
+    private TextField nameTextArea;
+    @FXML
+    private TextField crimeTextArea;
+    @FXML
+    private DatePicker datePicker;
 
     /**
      * Initializes the controller class.
@@ -32,13 +44,17 @@ public class ADCViewLawController implements Initializable {
     }    
 
     @FXML
-    private void downloadOnClick(ActionEvent event) {
+    private void addOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void deleteOnClick(ActionEvent event) {
     }
 
     @FXML
     private void backOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Dashboard.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Dashboard.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 

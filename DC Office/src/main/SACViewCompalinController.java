@@ -4,6 +4,7 @@
  */
 package main;
 
+import Model.SAC;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -24,10 +25,16 @@ import javafx.stage.Stage;
  */
 public class SACViewCompalinController implements Initializable {
 
-    @FXML
-    private TextArea inputTextArea;
-    @FXML
-    private TextArea outputTextArea;
+    private SAC user;
+
+    public SAC getUser() {
+        return user;
+    }
+
+    public void setUser(SAC user) {
+        this.user = user;
+    }
+    
 
     /**
      * Initializes the controller class.
@@ -37,13 +44,6 @@ public class SACViewCompalinController implements Initializable {
         // TODO
     }    
 
-    @FXML
-    private void saveOnClick(ActionEvent event) {
-    }
-
-    @FXML
-    private void deleteOnClick(ActionEvent event) {
-    }
 
     @FXML
     private void backOnClick(ActionEvent event) throws IOException {

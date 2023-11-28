@@ -4,6 +4,7 @@
  */
 package main;
 
+import Model.DC;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -15,6 +16,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -22,12 +24,30 @@ import javafx.stage.Stage;
  *
  * @author USER
  */
-public class ADCUpdatesNotesController implements Initializable {
+public class DCAddUserController implements Initializable {
+    private DC user;
+    @FXML
+    private TextField nameTextField;
+    @FXML
+    private TextField idTextField;
+    @FXML
+    private TextField contactTextField;
+    @FXML
+    private TextField emailTextField;
+    @FXML
+    private TextField addressTextField;
+    @FXML
+    private TextField dobTextField;
+    @FXML
+    private TextArea inputTextField;
 
-    @FXML
-    private TextArea inputTextArea;
-    @FXML
-    private TextArea outputTextArea;
+    public DC getUser() {
+        return user;
+    }
+
+    public void setUser(DC user) {
+        this.user = user;
+    }
 
     /**
      * Initializes the controller class.
@@ -37,9 +57,6 @@ public class ADCUpdatesNotesController implements Initializable {
         // TODO
     }    
 
-    @FXML
-    private void saveOnClick(ActionEvent event) {
-    }
 
     @FXML
     private void backOnClick(ActionEvent event) throws IOException {
@@ -54,7 +71,6 @@ public class ADCUpdatesNotesController implements Initializable {
         Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         someStage.setScene(someScene);
         someStage.show();
-
     }
     
 }

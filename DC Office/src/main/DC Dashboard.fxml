@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="579.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ADCDashboardController">
+<AnchorPane id="AnchorPane" prefHeight="579.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.DCDashboardController">
    <children>
       <Button layoutX="327.0" layoutY="97.0" mnemonicParsing="false" onAction="#localOnClick" prefHeight="25.0" prefWidth="201.0" text="Local Updates">
          <font>
@@ -21,7 +21,7 @@
             <Font size="15.0" />
          </font>
       </Button>
-      <Button layoutX="327.0" layoutY="230.0" mnemonicParsing="false" onAction="#taxOnClick" prefHeight="25.0" prefWidth="201.0" text="Tax reports">
+      <Button layoutX="327.0" layoutY="230.0" mnemonicParsing="false" onAction="#addOnClick" prefHeight="25.0" prefWidth="201.0" text="Add new user">
          <font>
             <Font size="15.0" />
          </font>
@@ -41,14 +41,14 @@
             <Font size="15.0" />
          </font>
       </Button>
-      <Button layoutX="327.0" layoutY="417.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="201.0" text="Meeting">
+      <Button layoutX="327.0" layoutY="417.0" mnemonicParsing="false" onAction="#meetingOnClick" prefHeight="25.0" prefWidth="201.0" text="Meeting">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
       <Button layoutX="53.0" layoutY="513.0" mnemonicParsing="false" onAction="#signoutOnClick" prefHeight="25.0" prefWidth="201.0" text="Sign Out">
          <font>
-            <Font size="15.0" />
+            <Font size="14.0" />
          </font>
       </Button>
    </children>

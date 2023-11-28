@@ -7,6 +7,9 @@ package main;
 import Model.DC;
 import Model.SAC;
 import Model.AA;
+import Model.EI;
+import Model.DM;
+import Model.SACEB;
 import Model.User;
 import java.io.File;
 import java.io.FileInputStream;
@@ -67,11 +70,11 @@ public class SignInPageController implements Initializable {
             return;
         } else if (usertype.equals("DC")) {
             Parent root = null;
-            FXMLLoader someLoader = new FXMLLoader(getClass().getResource("ADC Dashboard.fxml"));
+            FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Dashboard.fxml"));
             root = (Parent) someLoader.load();
             Scene someScene = new Scene(root);
 
-            ADCDashboardController p = someLoader.getController();
+            DCDashboardController p = someLoader.getController();
             p.setUser((DC) loggedIn);
 
             Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -84,8 +87,8 @@ public class SignInPageController implements Initializable {
             root = (Parent) someLoader.load();
             Scene someScene = new Scene(root);
 
-            /*SACDashboardController p = someLoader.getController();
-            p.setUser((SAC) this.user);*/
+            SACDashboardController p = someLoader.getController();
+            p.setUser((SAC) loggedIn);
 
             Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
             someStage.setScene(someScene);
@@ -117,9 +120,22 @@ public class SignInPageController implements Initializable {
             someStage.setScene(someScene);
             someStage.show();
         }
-        else if (usertype.equals("")){
+        else if (usertype.equals("DM")){
             Parent root = null;
-            FXMLLoader someLoader = new FXMLLoader(getClass().getResource("dashboard.fxml"));
+            FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DMdashboard.fxml"));
+            root = (Parent) someLoader.load();
+            Scene someScene = new Scene(root);
+
+            /*SACDashboardController p = someLoader.getController();
+            p.setUser((SAC) this.user);*/
+
+            Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            someStage.setScene(someScene);
+            someStage.show();
+        }
+        else if (usertype.equals("SACEB")){
+            Parent root = null;
+            FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBdashboard.fxml"));
             root = (Parent) someLoader.load();
             Scene someScene = new Scene(root);
 
@@ -144,15 +160,25 @@ public class SignInPageController implements Initializable {
         
         LocalDate date1 = LocalDate.now();
         
-        DC dc1 = new DC(100, "password", "Shifat", "Bashundhara", "0170101010", date1, "Dhaka");
+        DC dc1 = new DC(100, "pass", "Shifat", "Bashundhara", "0170101010", date1, "Dhaka");
         DC dc2 = new DC(101, "password", "Shifat", "Bashundhara", "0170101010", date1, "Chittagong");
         DC dc3 = new DC(102, "password", "Shifat", "Bashundhara", "0170101010", date1, "Dhaka");
-        SAC sac1 = new SAC(200, "password", "Shifat", "Bashundhara", "0170101010", date1, "Dhaka");
+        SAC sac1 = new SAC(200, "word", "Shifat", "Bashundhara", "0170101010", date1, "Dhaka");
         SAC sac2 = new SAC(201, "password", "Shifat", "Bashundhara", "0170101010", date1, "Dhaka");
         SAC sac3 = new SAC(202, "password", "Shifat", "Bashundhara", "0170101010", date1, "Dhaka");
+<<<<<<< HEAD
         AA aa1 = new AA(300, "password", "Shujana", "Bashundhara", "0170101010", date1, "Dhaka");
         AA aa2 = new AA(301, "password", "Shujana", "Bashundhara", "0170101010", date1, "Dhaka");
         AA aa3 = new AA(302, "password", "Shujana", "Bashundhara", "0170101010", date1, "Dhaka");
+=======
+        AA aa1 = new AA(301, "password", "Suzana", "Bashundhara", "0170101010", date1, "Dhaka");
+        EI ei1 = new EI(302, "password", "Suzana", "Bashundhara", "0170101010", date1, "Dhaka");
+        DM dm1 = new DM(401, "password", "Sadia", "Bashundhara", "0170101010", date1, "Dhaka");
+        SACEB saceb1 = new SACEB(402, "password", "Sadia", "Bashundhara", "0170101010", date1, "Dhaka");
+
+
+
+>>>>>>> c9ca8deb3e1025ac1f8944cac8cc30ac16ac8fe2
         
         
         File f = null;
@@ -175,8 +201,14 @@ public class SignInPageController implements Initializable {
             oos.writeObject(sac2);
             oos.writeObject(sac3);
             oos.writeObject(aa1);
+<<<<<<< HEAD
             oos.writeObject(aa2);
             oos.writeObject(aa3);
+=======
+            oos.writeObject(ei1);
+            oos.writeObject(dm1);
+            oos.writeObject(saceb1);
+>>>>>>> c9ca8deb3e1025ac1f8944cac8cc30ac16ac8fe2
             oos.close();
 
         } catch (IOException ex) {} 

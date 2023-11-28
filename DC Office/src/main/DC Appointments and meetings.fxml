@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ADCAppointmentsAndMeetingsController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.DCAppointmentsAndMeetingsController">
    <children>
       <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="522.0" prefWidth="742.0">
          <children>
@@ -17,8 +17,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <TextArea fx:id="inputTextArea" layoutX="42.0" layoutY="205.0" prefHeight="177.0" prefWidth="432.0" />
-            <TextArea fx:id="outputTextArea" layoutX="512.0" layoutY="125.0" prefHeight="257.0" prefWidth="200.0" />
+            <TextArea fx:id="inputTextArea" layoutX="42.0" layoutY="205.0" prefHeight="177.0" prefWidth="657.0" />
             <Button layoutX="42.0" layoutY="429.0" mnemonicParsing="false" onAction="#saveOnClick" text="Save">
                <font>
                   <Font size="14.0" />

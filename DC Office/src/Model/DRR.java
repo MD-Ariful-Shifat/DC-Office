@@ -4,10 +4,25 @@
  */
 package Model;
 
+import java.io.Serializable;
+import java.time.LocalDate;
+
 /**
  *
  * @author USER
  */
-public class DRR {
+public class DRR extends User implements Serializable{
+    private static final long serialVersionUID = 5L;
+
+    public DRR(int userID, String password, String name, String address, String contact, LocalDate DOB, String area) {
+        super(userID, password, name, address, contact, DOB, area);
+    }
+
+    @Override
+    public String toString() {
+        return "DRR{" + "userID=" + userID + ", password=" + password + ", name=" + name + ", address=" + address + ", contact=" + contact + ", DOB=" + DOB + ", area=" + area + '}';
+    }
+    
+    
     
 }

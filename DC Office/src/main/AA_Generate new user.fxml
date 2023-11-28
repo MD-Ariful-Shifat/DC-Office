@@ -23,6 +23,6 @@
       <Label layoutX="65.0" layoutY="358.0" text="Password" />
       <TextField layoutX="195.0" layoutY="353.0" onAction="#passwOnClick" prefHeight="31.0" prefWidth="187.0" />
       <Button layoutX="234.0" layoutY="397.0" mnemonicParsing="false" onAction="#enOnClick" prefHeight="31.0" prefWidth="110.0" text="Enter" />
-      <Button layoutX="64.0" layoutY="459.0" mnemonicParsing="false" onAction="#backOnClick" text="&lt;&lt;Back" />
+      <Button layoutX="64.0" layoutY="459.0" mnemonicParsing="false" onAction="#backbutton" text="&lt;&lt;Back" />
    </children>
 </AnchorPane>

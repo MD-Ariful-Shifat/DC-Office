@@ -19,6 +19,6 @@
       <Button layoutX="44.0" layoutY="258.0" mnemonicParsing="false" onAction="#collOnClick" text="College" />
       <TextArea layoutX="46.0" layoutY="327.0" prefHeight="67.0" prefWidth="446.0" />
       <TextArea layoutX="49.0" layoutY="491.0" prefHeight="67.0" prefWidth="446.0" />
-      <Button layoutX="25.0" layoutY="586.0" mnemonicParsing="false" onAction="#backOnClick" text="&lt;&lt;Back" />
+      <Button layoutX="25.0" layoutY="586.0" mnemonicParsing="false" onAction="#backbutton" text="&lt;&lt;Back" />
    </children>
 </AnchorPane>

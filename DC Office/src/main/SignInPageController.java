@@ -60,6 +60,7 @@ public class SignInPageController implements Initializable {
         String password = passTextField.getText();
         String usertype = userComboBox.getValue();
         
+        
         User loggedIn = User.login(id, password);
         if (loggedIn == null){
             //error here
@@ -140,7 +141,7 @@ public class SignInPageController implements Initializable {
     
         
         
-        /*
+        
         LocalDate date1 = LocalDate.now();
         
         DC dc1 = new DC(100, "password", "Shifat", "Bashundhara", "0170101010", date1, "Dhaka");
@@ -149,6 +150,9 @@ public class SignInPageController implements Initializable {
         SAC sac1 = new SAC(200, "password", "Shifat", "Bashundhara", "0170101010", date1, "Dhaka");
         SAC sac2 = new SAC(201, "password", "Shifat", "Bashundhara", "0170101010", date1, "Dhaka");
         SAC sac3 = new SAC(202, "password", "Shifat", "Bashundhara", "0170101010", date1, "Dhaka");
+        AA aa1 = new AA(300, "password", "Shujana", "Bashundhara", "0170101010", date1, "Dhaka");
+        AA aa2 = new AA(301, "password", "Shujana", "Bashundhara", "0170101010", date1, "Dhaka");
+        AA aa3 = new AA(302, "password", "Shujana", "Bashundhara", "0170101010", date1, "Dhaka");
         
         
         File f = null;
@@ -170,6 +174,9 @@ public class SignInPageController implements Initializable {
             oos.writeObject(sac1);
             oos.writeObject(sac2);
             oos.writeObject(sac3);
+            oos.writeObject(aa1);
+            oos.writeObject(aa2);
+            oos.writeObject(aa3);
             oos.close();
 
         } catch (IOException ex) {} 
@@ -178,7 +185,7 @@ public class SignInPageController implements Initializable {
                 if(oos != null) oos.close();
             } catch (IOException ex) {}
         }
-        System.out.println("Users added successfully");*/
+        System.out.println("Users added successfully");
         
     }
     

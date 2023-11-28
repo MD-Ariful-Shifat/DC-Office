@@ -23,6 +23,6 @@
       <RadioButton layoutX="167.0" layoutY="190.0" mnemonicParsing="false" text=" Confirm " />
       <RadioButton layoutX="304.0" layoutY="190.0" mnemonicParsing="false" text="Disapproval" />
       <Button layoutX="243.0" layoutY="248.0" mnemonicParsing="false" text="Send mail" />
-      <Button layoutX="33.0" layoutY="311.0" mnemonicParsing="false" text="&lt;&lt;Back" />
+      <Button layoutX="33.0" layoutY="311.0" mnemonicParsing="false" onAction="#backbutton" text="&lt;&lt;Back" />
    </children>
 </AnchorPane>

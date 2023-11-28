@@ -15,7 +15,6 @@
       <Text layoutX="44.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of mails:" />
       <Button layoutX="232.0" layoutY="362.0" mnemonicParsing="false" onAction="#seOnClick" prefHeight="31.0" prefWidth="64.0" text="Send" />
       <Button layoutX="382.0" layoutY="362.0" mnemonicParsing="false" onAction="#cancelOnClick" text="Cancel" />
-      <Button layoutX="47.0" layoutY="419.0" mnemonicParsing="false" onAction="#backOnClick" text="&lt;&lt; Back" />
       <Label layoutX="44.0" layoutY="227.0" text="Date" />
       <Label layoutX="44.0" layoutY="277.0" text="Time" />
       <ComboBox layoutX="206.0" layoutY="272.0" onAction="#tOnClick" prefHeight="31.0" prefWidth="208.0" />
@@ -23,5 +22,6 @@
       <Label layoutX="44.0" layoutY="322.0" prefHeight="21.0" prefWidth="174.0" text="Clash date and time" />
       <RadioButton layoutX="234.0" layoutY="322.0" mnemonicParsing="false" onAction="#cdtOnClick" text="Yes" />
       <RadioButton layoutX="329.0" layoutY="322.0" mnemonicParsing="false" onAction="#noOnClick" text="No" />
+      <Button layoutX="52.0" layoutY="420.0" mnemonicParsing="false" onAction="#backbutton" text="&lt;&lt;Back" />
    </children>
 </AnchorPane>

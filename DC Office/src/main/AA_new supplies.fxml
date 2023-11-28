@@ -26,8 +26,8 @@
       <Label layoutX="195.0" layoutY="307.0" prefHeight="21.0" prefWidth="51.0" text="Price" />
       <ComboBox layoutX="277.0" layoutY="302.0" onAction="#priceOnClick" prefHeight="31.0" prefWidth="188.0" />
       <Label layoutX="195.0" layoutY="349.0" prefHeight="21.0" prefWidth="77.0" text="Purchase " />
-      <Button layoutX="46.0" layoutY="529.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="31.0" prefWidth="93.0" text="&lt;&lt;Back" />
       <Label layoutX="45.0" layoutY="395.0" prefHeight="21.0" prefWidth="188.0" text="Confirmation Message" />
       <TextArea layoutX="46.0" layoutY="422.0" prefHeight="72.0" prefWidth="521.0" />
+      <Button layoutX="46.0" layoutY="516.0" mnemonicParsing="false" onAction="#backbutton" text="&lt;&lt;Back" />
    </children>
 </AnchorPane>

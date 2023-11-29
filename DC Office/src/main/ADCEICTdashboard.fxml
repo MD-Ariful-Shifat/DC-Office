@@ -13,7 +13,7 @@
          </font>
       </Label>
       <Button layoutX="31.0" layoutY="124.0" mnemonicParsing="false" onAction="#eduimOnClick" prefHeight="31.0" prefWidth="468.0" text=" Education Improvement" />
-      <Button layoutX="515.0" layoutY="124.0" mnemonicParsing="false" onAction="#cudeOnClick" prefHeight="31.0" prefWidth="468.0" text=" Curriculum Development" />
+      <Button layoutX="515.0" layoutY="124.0" mnemonicParsing="false" onAction="#cudeOnClick" prefHeight="31.0" prefWidth="468.0" text="Rural Development" />
       <Button layoutX="31.0" layoutY="174.0" mnemonicParsing="false" onAction="#ictOnClick" prefHeight="31.0" prefWidth="468.0" text="ICT " />
       <Button layoutX="515.0" layoutY="174.0" mnemonicParsing="false" onAction="#egovOnClick" prefHeight="31.0" prefWidth="468.0" text="E-government service" />
       <Button layoutX="31.0" layoutY="228.0" mnemonicParsing="false" onAction="#daocdOnClick" prefHeight="31.0" prefWidth="468.0" text="Development activities of Curriculum Development" />

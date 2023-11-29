@@ -5,7 +5,11 @@
 package main;
 
 import Model.DC;
+import Model.User;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -15,6 +19,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -37,9 +43,13 @@ public class DCAddUserController implements Initializable {
     @FXML
     private TextField addressTextField;
     @FXML
-    private TextField dobTextField;
+    private ComboBox<String> usertypeCombo;
     @FXML
-    private TextArea inputTextField;
+    private TextField passTextFiled;
+    @FXML
+    private TextField areaTextField;
+    @FXML
+    private DatePicker dobPicker;
 
     public DC getUser() {
         return user;
@@ -54,6 +64,8 @@ public class DCAddUserController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        String[] users = {"DC", "SAC", "AA", "EI", "DM", "SACEB", "UNO", "DR"};
+        usertypeCombo.getItems().addAll(users);
         // TODO
     }    
 
@@ -72,5 +84,56 @@ public class DCAddUserController implements Initializable {
         someStage.setScene(someScene);
         someStage.show();
     }
+
+    @FXML
+    /*private void addOnClick(ActionEvent event) {
+        int id = Integer.parseInt(idTextField.getText());
+        String name = nameTextField.getText();
+        String password = passTextFiled.getText();
+        String useraddress = addressTextField.getText();
+        String usercontact = contactTextField.getText();
+        String usertype = usertypeCombo.getValue();
+        String userarea = areaTextField.getText();
+        String userdob = dobPicker.getValue();*/
+
+
+        
+
+
+        /*Read text field for combo box*/
+        User ToBeAdded = null;
+        /* if user type = DC then ToBeAdded = New DC(...)*/
+       /* if (usertype.equals("DC")) {
+            ToBeAdded = new DC(id, password, name, useraddress, usercontact, DOB, userarea);
+;
+        }
+         File f = null;
+        FileOutputStream fos = null;      
+        ObjectOutputStream oos = null;
+        try {
+            f = new File("Users.bin");
+            if(f.exists()){
+                fos = new FileOutputStream(f,true);
+                oos = new AppendableObjectOutputStream(fos);                
+            }
+            else{
+                fos = new FileOutputStream(f);
+                oos = new ObjectOutputStream(fos);               
+            }
+            oos.writeObject(ToBeAdded);
+
+            oos.close();
+
+        } catch (IOException ex) {} 
+        finally {
+            try {
+                if(oos != null) oos.close();
+            } catch (IOException ex) {}
+        }
+        System.out.println("Users added successfully"); 
+
+
+    }
+*/
     
 }

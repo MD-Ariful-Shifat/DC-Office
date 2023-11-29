@@ -21,7 +21,7 @@ import javafx.stage.Stage;
  *
  * @author ASUS
  */
-public class EI_CurriculumDevelopmentController implements Initializable {
+public class EI_RuralDevelopmentController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -39,14 +39,8 @@ public class EI_CurriculumDevelopmentController implements Initializable {
     private void urOnClick(ActionEvent event) {
     }
 
-    @FXML
     private void backOnClick(ActionEvent event) throws IOException {
-                Parent root = FXMLLoader.load(getClass().getResource("ADCEICTdashboard.fxml"));
-                Scene scene = new Scene(root);
-                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                window.setTitle("ADCEICT dash board");
-                window.setScene(scene);
-                window.show();
+
     }
 
     @FXML
@@ -55,6 +49,16 @@ public class EI_CurriculumDevelopmentController implements Initializable {
 
     @FXML
     private void deenterOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void backbuttonOnClick(ActionEvent event) throws IOException {
+                Parent root = FXMLLoader.load(getClass().getResource("ADCEICTdashboard.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("ADCEICTdashboard");
+                window.setScene(scene);
+                window.show();
     }
     
 }

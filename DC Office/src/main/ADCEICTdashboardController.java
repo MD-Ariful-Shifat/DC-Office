@@ -59,7 +59,7 @@ public class ADCEICTdashboardController implements Initializable {
     @FXML
     private void cudeOnClick(ActionEvent event) throws IOException {
         
-        Parent root = FXMLLoader.load(getClass().getResource("EI_Curriculum development.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("EI_Rural development.fxml"));
                 Scene scene = new Scene(root);
                 Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 window.setTitle("Education Improvement");

@@ -37,7 +37,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Text>
-            <Button layoutX="373.0" layoutY="281.0" mnemonicParsing="false" text="Back" />
+            <Button layoutX="373.0" layoutY="281.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
             <Button layoutX="14.0" layoutY="281.0" mnemonicParsing="false" text="Add" />
             <Button layoutX="78.0" layoutY="281.0" mnemonicParsing="false" text="Delete" />
          </children>

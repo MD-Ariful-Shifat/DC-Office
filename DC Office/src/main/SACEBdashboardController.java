@@ -74,7 +74,7 @@ public class SACEBdashboardController implements Initializable {
     @FXML
     private void studentenrollmentOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG4StudentEnrollment and Retention.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG4Student Enrollment and Retention.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 

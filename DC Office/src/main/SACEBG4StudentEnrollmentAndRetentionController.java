@@ -6,6 +6,8 @@ package main;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
@@ -22,5 +24,9 @@ public class SACEBG4StudentEnrollmentAndRetentionController implements Initializ
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void backOnClick(ActionEvent event) {
+    }
     
 }

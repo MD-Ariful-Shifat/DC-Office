@@ -6,8 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="main.SACEBG5SpecialEducationProgramsController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.SACEBG5SpecialEducationProgramsController">
    <children>
       <AnchorPane layoutX="65.0" layoutY="14.0" prefHeight="375.0" prefWidth="478.0">
          <children>
@@ -36,7 +35,7 @@
             </Text>
             <Button layoutX="228.0" layoutY="262.0" mnemonicParsing="false" text="Edit" />
             <Button layoutX="303.0" layoutY="262.0" mnemonicParsing="false" text="Save" />
-            <Button layoutX="413.0" layoutY="329.0" mnemonicParsing="false" text="Back" />
+            <Button layoutX="413.0" layoutY="329.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
          </children>
       </AnchorPane>
    </children>

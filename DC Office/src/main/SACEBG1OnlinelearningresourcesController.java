@@ -34,19 +34,13 @@ public class SACEBG1OnlinelearningresourcesController implements Initializable {
     }    
 
         private void backOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBdashboard.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
-        
-        System.out.println(this.user.toString());
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
+            Parent root = FXMLLoader.load(getClass().getResource("SignIn Page.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("Sign In Page");
+                window.setScene(scene);
+                window.show();
+  
     }
 
 }

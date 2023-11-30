@@ -69,10 +69,10 @@ public class DMdashboardController implements Initializable {
 
     @FXML
     private void budgetOnClick(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("DMpublicservice.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("DMBudgetandfin.fxml"));
                 Scene scene = new Scene(root);
                 Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                window.setTitle("DMpublicservice");
+                window.setTitle("DMBudgetandfin");
                 window.setScene(scene);
                 window.show();
         
@@ -83,10 +83,10 @@ public class DMdashboardController implements Initializable {
 
     @FXML
     private void dataOnClick(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("DMpublicservice.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("DMdataandreport.fxml"));
                 Scene scene = new Scene(root);
                 Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                window.setTitle("DMpublicservice");
+                window.setTitle("DMdataandreport");
                 window.setScene(scene);
                 window.show();
         
@@ -94,29 +94,15 @@ public class DMdashboardController implements Initializable {
     
     }
 
-    private void infrastructureOnClick(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("DMpublicservice.fxml"));
-                Scene scene = new Scene(root);
-                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                window.setTitle("DMpublicservice");
-                window.setScene(scene);
-                window.show();
+   
+    
+    
+
+    
         
 
     
-    }
-
-    private void legalOnClick(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("DMpublicservice.fxml"));
-                Scene scene = new Scene(root);
-                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                window.setTitle("DMpublicservice");
-                window.setScene(scene);
-                window.show();
-        
-
     
-    }
 
 
     
@@ -173,11 +159,25 @@ public class DMdashboardController implements Initializable {
     }
 
     @FXML
-    private void fineOnClick(ActionEvent event) {
+    private void fineOnClick(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("DMfine.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("DMfine");
+                window.setScene(scene);
+                window.show();
+        
     }
 
     @FXML
-    private void communicationOnClick(ActionEvent event) {
+    private void communicationOnClick(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("DM Communication and coordination.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("DM Communication and coordination");
+                window.setScene(scene);
+                window.show();
+        
     }
     
 

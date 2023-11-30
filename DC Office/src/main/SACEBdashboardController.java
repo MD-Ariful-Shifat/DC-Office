@@ -79,10 +79,10 @@ public class SACEBdashboardController implements Initializable {
 
     @FXML
     private void teacherprofOnClick(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("SACEBTeacherprofesionaldevopmentpage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("SACEBG3Teacherprofesionaldevopmentpage.fxml"));
                 Scene scene = new Scene(root);
                 Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                window.setTitle("SACEBTeacherprofesionaldevopmentpage");
+                window.setTitle("SACEBG3Teacherprofesionaldevopmentpage");
                 window.setScene(scene);
                 window.show();
     }

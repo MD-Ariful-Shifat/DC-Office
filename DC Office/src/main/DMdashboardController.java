@@ -43,118 +43,79 @@ public class DMdashboardController implements Initializable {
 
 
     private void backOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SignIn Page.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
         
-        System.out.println(this.user.toString());
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
-
+        Parent root = FXMLLoader.load(getClass().getResource("SignIn Page.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("Sign In Page");
+                window.setScene(scene);
+                window.show();
+        
 
     }
     @FXML
     private void publicOnClick(ActionEvent event) throws IOException {
-                Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DMpublicservice.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
         
-        System.out.println(this.user.toString());
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
-
+        Parent root = FXMLLoader.load(getClass().getResource("DMpublicservice.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("DMpublicservice");
+                window.setScene(scene);
+                window.show();
+        
 
     
     }
 
     @FXML
     private void budgetOnClick(ActionEvent event) throws IOException {
-                Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DMBudgetandfin.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
+        Parent root = FXMLLoader.load(getClass().getResource("DMpublicservice.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("DMpublicservice");
+                window.setScene(scene);
+                window.show();
         
-        System.out.println(this.user.toString());
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
-
+    
 
     
     }
 
     @FXML
     private void dataOnClick(ActionEvent event) throws IOException {
-                Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DMdataandreport.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
+        Parent root = FXMLLoader.load(getClass().getResource("DMpublicservice.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("DMpublicservice");
+                window.setScene(scene);
+                window.show();
         
-        System.out.println(this.user.toString());
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
-
 
     
     }
 
     @FXML
     private void infrastructureOnClick(ActionEvent event) throws IOException {
-                Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DMInfratruture Development.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
+        Parent root = FXMLLoader.load(getClass().getResource("DMpublicservice.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("DMpublicservice");
+                window.setScene(scene);
+                window.show();
         
-        System.out.println(this.user.toString());
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
-
 
     
     }
 
     @FXML
     private void legalOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DM Legal And Regulatory Information.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
+        Parent root = FXMLLoader.load(getClass().getResource("DMpublicservice.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("DMpublicservice");
+                window.setScene(scene);
+                window.show();
         
-        System.out.println(this.user.toString());
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
-
 
     
     }
@@ -168,76 +129,49 @@ public class DMdashboardController implements Initializable {
 
     @FXML
     private void backOnClcik(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SignIn Page.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
+        Parent root = FXMLLoader.load(getClass().getResource("DMpublicservice.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("DMpublicservice");
+                window.setScene(scene);
+                window.show();
         
-        System.out.println(this.user.toString());
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
-
         
     }
 
     @FXML
     private void legalandOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DM Legal and Regulatory Information.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
+        Parent root = FXMLLoader.load(getClass().getResource("DMpublicservice.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("");
+                window.setScene(scene);
+                window.show();
         
-        System.out.println(this.user.toString());
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
-
         
     }
 
     @FXML
     private void acceseeteOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DMAccess resources related to education.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
+        Parent root = FXMLLoader.load(getClass().getResource("DMAccess resources related to education.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("DMAccess resources related to education");
+                window.setScene(scene);
+                window.show();
         
-        System.out.println(this.user.toString());
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
-
     }
 
     @FXML
     private void infradeveOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DMInfratructure Development.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
+        Parent root = FXMLLoader.load(getClass().getResource("DMInfratructure Development.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("DMInfratructure Development");
+                window.setScene(scene);
+                window.show();
         
-        System.out.println(this.user.toString());
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
-
+    
     }
     
 

@@ -148,10 +148,10 @@ public class DMdashboardController implements Initializable {
 
     @FXML
     private void infradeveOnClick(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("DMInfratructure Development.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("DMInfrastructure Development.fxml"));
                 Scene scene = new Scene(root);
                 Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                window.setTitle("DMInfratructure Development");
+                window.setTitle("DMInfrastructure Development");
                 window.setScene(scene);
                 window.show();
         

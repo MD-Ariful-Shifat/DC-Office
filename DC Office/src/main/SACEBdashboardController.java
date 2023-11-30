@@ -119,10 +119,10 @@ public class SACEBdashboardController implements Initializable {
 
     @FXML
     private void resourceallocationOnClick(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource(".fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("SACEBresourceallocation.fxml"));
                 Scene scene = new Scene(root);
                 Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                window.setTitle("Sign In Page");
+                window.setTitle("SACEBresourceallocation");
                 window.setScene(scene);
                 window.show();
       

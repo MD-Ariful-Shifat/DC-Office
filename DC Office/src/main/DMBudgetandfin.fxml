@@ -27,7 +27,7 @@
             <Text layoutX="22.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Financial planning:" />
             <Button cancelButton="true" defaultButton="true" layoutX="22.0" layoutY="316.0" mnemonicParsing="false" text="Edit" />
             <Button cancelButton="true" defaultButton="true" layoutX="103.0" layoutY="316.0" mnemonicParsing="false" text="Save" />
-            <Button layoutX="344.0" layoutY="316.0" mnemonicParsing="false" text="Back" />
+            <Button layoutX="344.0" layoutY="316.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
          </children>
       </AnchorPane>
    </children>

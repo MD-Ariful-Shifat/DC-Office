@@ -16,7 +16,7 @@
                   <Font name="System Bold" size="31.0" />
                </font>
             </Text>
-            <Button layoutX="365.0" layoutY="336.0" mnemonicParsing="false" text="Back" />
+            <Button layoutX="365.0" layoutY="336.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
          </children>
       </AnchorPane>
    </children>

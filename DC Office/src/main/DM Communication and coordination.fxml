@@ -18,7 +18,7 @@
             <TextArea layoutX="27.0" layoutY="37.0" prefHeight="247.0" prefWidth="281.0" />
             <Button cancelButton="true" defaultButton="true" layoutX="33.0" layoutY="307.0" mnemonicParsing="false" text="Create a post" />
             <Button cancelButton="true" defaultButton="true" layoutX="132.0" layoutY="307.0" mnemonicParsing="false" text="Save" />
-            <Button layoutX="292.0" layoutY="307.0" mnemonicParsing="false" text="Back" />
+            <Button layoutX="292.0" layoutY="307.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
          </children>
       </AnchorPane>
    </children>

@@ -29,7 +29,7 @@
             </Text>
             <Button cancelButton="true" defaultButton="true" layoutX="38.0" layoutY="303.0" mnemonicParsing="false" text="Edit" />
             <Button cancelButton="true" defaultButton="true" layoutX="121.0" layoutY="303.0" mnemonicParsing="false" text="Save" />
-            <Button layoutX="477.0" layoutY="316.0" mnemonicParsing="false" text="Back" />
+            <Button layoutX="477.0" layoutY="316.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
          </children>
       </AnchorPane>
    </children>

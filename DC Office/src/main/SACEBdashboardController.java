@@ -162,7 +162,7 @@ public class SACEBdashboardController implements Initializable {
     }
 
     @FXML
-    private void resourceallocationOnClick(ActionEvent event) {
+    private void resourceallocationOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SignIn Page.fxml"));
         root = (Parent) someLoader.load();
@@ -181,7 +181,7 @@ public class SACEBdashboardController implements Initializable {
 
     @FXML
     private void promotetecintOnClick(ActionEvent event) throws IOException {
-      Parent root = null;
+        Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBPromote Technology IntegrationandResource Allocation.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);

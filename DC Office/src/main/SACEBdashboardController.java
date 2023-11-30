@@ -58,141 +58,94 @@ public class SACEBdashboardController implements Initializable {
 
     @FXML
     private void educationOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBeducationbox.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("SACEBeducationbox.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("SACEBeducationbox");
+                window.setScene(scene);
+                window.show();
     }
 
     @FXML
     private void studentenrollmentOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG4Student Enrollment and Retention.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("SACEBG4Student Enrollment and Retention.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("SACEBG4Student Enrollment and Retention");
+                window.setScene(scene);
+                window.show();
     }
  
 
     @FXML
     private void teacherprofOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG2Teacherprofesionaldevlopmentpage.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("SACEBTeacherprofesionaldevopmentpage.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("SACEBTeacherprofesionaldevopmentpage");
+                window.setScene(scene);
+                window.show();
     }
 
     @FXML
     private void curriculumenOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG3curriculumenhancementpage.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("SACEBG3curriculumenhancementpage.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("SACEBG3curriculumenhancementpage");
+                window.setScene(scene);
+                window.show();
     }
 
     @FXML
     private void specialeduOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG5 Special Education Programs.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("SACEBG5Special Education Programs.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("SACEBG5Special Education Programs");
+                window.setScene(scene);
+                window.show();
     }
 
     @FXML
     private void communityengOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBG6communityeng.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("SACEBG6communityeng.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("SACEBG6communityeng");
+                window.setScene(scene);
+                window.show();
     }
 
     @FXML
     private void resourceallocationOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEB.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
-        
-        System.out.println(this.user.toString());
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
+        Parent root = FXMLLoader.load(getClass().getResource(".fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("Sign In Page");
+                window.setScene(scene);
+                window.show();
       
     }
 
     @FXML
     private void promotetecintOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SACEBPromote Technology IntegrationandResource Allocation.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("SACEBPromote Technology IntegrationandResource Allocation.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("SACEBPromote Technology IntegrationandResource Allocation");
+                window.setScene(scene);
+                window.show();
     }
 
     @FXML
     private void backOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SignIn Page.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("SignIn Page.fxml"));
+                Scene scene = new Scene(root);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setTitle("Sign In Page");
+                window.setScene(scene);
+                window.show();
     }
     
     

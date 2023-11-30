@@ -189,8 +189,6 @@ public class SACEBdashboardController implements Initializable {
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SignIn Page.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
-        
-        System.out.println(this.user.toString());
 
         /*SomeFXMLController p = someLoader.getController();
         p.setUser(this.user);*/

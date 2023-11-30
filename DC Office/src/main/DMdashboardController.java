@@ -42,7 +42,7 @@ public class DMdashboardController implements Initializable {
     }
 
 
-    private void signoutOnClick(ActionEvent event) throws IOException {
+    private void backOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SignIn Page.fxml"));
         root = (Parent) someLoader.load();

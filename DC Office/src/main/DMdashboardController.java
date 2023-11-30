@@ -94,7 +94,6 @@ public class DMdashboardController implements Initializable {
     
     }
 
-    @FXML
     private void infrastructureOnClick(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("DMpublicservice.fxml"));
                 Scene scene = new Scene(root);
@@ -107,7 +106,6 @@ public class DMdashboardController implements Initializable {
     
     }
 
-    @FXML
     private void legalOnClick(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("DMpublicservice.fxml"));
                 Scene scene = new Scene(root);
@@ -129,10 +127,10 @@ public class DMdashboardController implements Initializable {
 
     @FXML
     private void backOnClcik(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("DMpublicservice.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("SignIn Page.fxml"));
                 Scene scene = new Scene(root);
                 Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                window.setTitle("DMpublicservice");
+                window.setTitle("Sign In Page");
                 window.setScene(scene);
                 window.show();
         
@@ -141,10 +139,10 @@ public class DMdashboardController implements Initializable {
 
     @FXML
     private void legalandOnClick(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("DMpublicservice.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("DM Legal and Regulatory Information.fxml"));
                 Scene scene = new Scene(root);
                 Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                window.setTitle("");
+                window.setTitle("DM Legal and Regulatory Information");
                 window.setScene(scene);
                 window.show();
         
@@ -172,6 +170,14 @@ public class DMdashboardController implements Initializable {
                 window.show();
         
     
+    }
+
+    @FXML
+    private void fineOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void communicationOnClick(ActionEvent event) {
     }
     
 

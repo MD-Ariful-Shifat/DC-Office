@@ -99,10 +99,10 @@ public class SACEBdashboardController implements Initializable {
 
     @FXML
     private void specialeduOnClick(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("SACEBG5Special Education Programs.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("SACEBG5 Special Education Programs.fxml"));
                 Scene scene = new Scene(root);
                 Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                window.setTitle("SACEBG5Special Education Programs");
+                window.setTitle("SACEBG5 Special Education Programs");
                 window.setScene(scene);
                 window.show();
     }

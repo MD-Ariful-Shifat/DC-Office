@@ -15,26 +15,11 @@ import javafx.fxml.Initializable;
  *
  * @author USER
  */
-<<<<<<< HEAD:DC Office/src/main/FXMLDocumentController.java
-public class FXMLDocumentController implements Initializable {
-    
-    @FXML
-    private Label label;
-    
-    
-    @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
-    
-=======
 public class SACEndorseWarrentController implements Initializable {
 
     /**
      * Initializes the controller class.
      */
->>>>>>> fbd4bf661c29c23adf463a344614ec9a274de860:DC Office/src/main/SACEndorseWarrentController.java
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

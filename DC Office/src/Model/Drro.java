@@ -11,10 +11,10 @@ import java.time.LocalDate;
  *
  * @author USER
  */
-public class DRR extends User implements Serializable{
+public class Drro extends User implements Serializable{
     private static final long serialVersionUID = 5L;
 
-    public DRR(int userID, String password, String name, String address, String contact, LocalDate DOB, String area) {
+    public Drro(int userID, String password, String name, String address, String contact, LocalDate DOB, String area) {
         super(userID, password, name, address, contact, DOB, area);
     }
 

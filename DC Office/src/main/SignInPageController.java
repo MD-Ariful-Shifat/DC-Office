@@ -10,6 +10,7 @@ import Model.AA;
 import Model.EI;
 import Model.DM;
 import Model.SACEB;
+import Model.DRR;
 import Model.User;
 import java.io.File;
 import java.io.FileInputStream;
@@ -146,6 +147,32 @@ public class SignInPageController implements Initializable {
             someStage.setScene(someScene);
             someStage.show();
         }
+        else if (usertype.equals("DRR")){
+            Parent root = null;
+            FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DrroDashboard.fxml"));
+            root = (Parent) someLoader.load();
+            Scene someScene = new Scene(root);
+
+            /*SACDashboardController p = someLoader.getController();
+            p.setUser((SAC) this.user);*/
+
+            Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            someStage.setScene(someScene);
+            someStage.show();
+        }
+       /* else if (usertype.equals("UNO")){
+            Parent root = null;
+            FXMLLoader someLoader = new FXMLLoader(getClass().getResource("dashboard.fxml"));
+            root = (Parent) someLoader.load();
+            Scene someScene = new Scene(root);
+
+            /*SACDashboardController p = someLoader.getController();
+            p.setUser((SAC) this.user);*/
+
+          /*  Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            someStage.setScene(someScene);
+            someStage.show();
+        }*/
                 
     }
 
@@ -172,6 +199,7 @@ public class SignInPageController implements Initializable {
         
         DM dm1 = new DM(401, "password", "Sadia", "Bashundhara", "0170101010", date1, "Dhaka");
         SACEB saceb1 = new SACEB(402, "password", "Sadia", "Bashundhara", "0170101010", date1, "Dhaka");
+        DRR drr1 = new DRR(501, "password", "Israt", "Bashundhara", "0170101010", date1, "Dhaka");
 
 
 
@@ -202,7 +230,7 @@ public class SignInPageController implements Initializable {
             oos.writeObject(ei1);
             oos.writeObject(dm1);
             oos.writeObject(saceb1);
-
+            oos.writeObject(drr1);
             oos.close();
 
         } catch (IOException ex) {} 

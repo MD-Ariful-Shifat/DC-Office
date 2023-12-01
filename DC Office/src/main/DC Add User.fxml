@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.DCAddUserController">
+   <children>
+      <Button layoutX="57.0" layoutY="446.0" mnemonicParsing="false" onAction="#backOnClick" text="&lt;&lt; Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text layoutX="32.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add User here:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="40.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+      <Text layoutX="40.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" wrappingWidth="34.2949295938015" />
+      <Text layoutX="40.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" wrappingWidth="80.70703125" />
+      <Text layoutX="40.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact:" wrappingWidth="62.634765625" />
+      <Text layoutX="40.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOB:" wrappingWidth="62.63477858901024" />
+      <Text layoutX="40.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="62.63477858901024" />
+      <TextField fx:id="nameTextField" layoutX="103.0" layoutY="112.0" />
+      <TextField fx:id="idTextField" layoutX="103.0" layoutY="138.0" />
+      <TextField fx:id="contactTextField" layoutX="103.0" layoutY="171.0" />
+      <TextField fx:id="emailTextField" layoutX="103.0" layoutY="207.0" />
+      <TextField fx:id="addressTextField" layoutX="103.0" layoutY="244.0" />
+      <ComboBox fx:id="usertypeCombo" layoutX="522.0" layoutY="104.0" prefWidth="150.0" />
+      <Label layoutX="438.0" layoutY="108.0" text="User type:" />
+      <TextField fx:id="passTextFiled" layoutX="103.0" layoutY="319.0" />
+      <Text layoutX="43.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" wrappingWidth="62.63477858901024" />
+      <Button layoutX="597.0" layoutY="437.0" mnemonicParsing="false" onAction="#addOnClick" text="Add new user">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="dobPicker" layoutX="103.0" layoutY="279.0" />
+      <TextField fx:id="areaTextField" layoutX="103.0" layoutY="353.0" />
+      <Text layoutX="40.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Area::" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.DMdashboardController">
+   <children>
+      <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="41.0" mnemonicParsing="false" onAction="#publicOnClick" prefHeight="25.0" prefWidth="265.0" text="Public Services" />
+      <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="122.0" mnemonicParsing="false" onAction="#budgetOnClick" prefHeight="25.0" prefWidth="265.0" text=" Budget and Finance " />
+      <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="78.0" mnemonicParsing="false" onAction="#dataOnClick" prefHeight="25.0" prefWidth="265.0" text="Data and reports" />
+      <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="209.0" mnemonicParsing="false" onAction="#fineOnClick" prefHeight="25.0" prefWidth="265.0" text="Fine" />
+      <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="167.0" mnemonicParsing="false" onAction="#communicationOnClick" prefHeight="25.0" prefWidth="265.0" text="Communication and Coordination" />
+      <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="253.0" mnemonicParsing="false" onAction="#legalandOnClick" prefHeight="25.0" prefWidth="265.0" text="Legal and Regulatory Information" />
+      <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="333.0" mnemonicParsing="false" onAction="#acceseeteOnClick" prefHeight="25.0" prefWidth="265.0" text="Access resources related to education" />
+      <Button cancelButton="true" defaultButton="true" layoutX="154.0" layoutY="297.0" mnemonicParsing="false" onAction="#infradeveOnClick" prefHeight="25.0" prefWidth="265.0" text=" Infrastructure Development" />
+      <Button defaultButton="true" layoutX="469.0" layoutY="346.0" mnemonicParsing="false" onAction="#backOnClcik" text="Back">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

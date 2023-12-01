@@ -146,8 +146,7 @@ public class SignInPageController implements Initializable {
             someStage.setScene(someScene);
             someStage.show();
         }
-        
-        
+                
     }
 
     @FXML
@@ -173,6 +172,7 @@ public class SignInPageController implements Initializable {
         
         DM dm1 = new DM(401, "password", "Sadia", "Bashundhara", "0170101010", date1, "Dhaka");
         SACEB saceb1 = new SACEB(402, "password", "Sadia", "Bashundhara", "0170101010", date1, "Dhaka");
+
 
 
 

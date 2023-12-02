@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="512.0" prefWidth="784.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="main.DRROfloodcenterProposalController">
+<AnchorPane id="AnchorPane" prefHeight="512.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.DRROfloodcenterProposalController">
    <children>
       <Label layoutX="255.0" layoutY="39.0" text="Flood Center Proposal">
          <font>

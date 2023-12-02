@@ -12,14 +12,14 @@
             <Font size="28.0" />
          </font>
       </Label>
-      <Button layoutX="107.0" layoutY="127.0" mnemonicParsing="false" onMouseClicked="#AllocateFoodandCashBtn" prefHeight="31.0" prefWidth="198.0" text="Allocate food and cash" />
-      <Button layoutX="107.0" layoutY="188.0" mnemonicParsing="false" onMouseClicked="#BlanketDistributionBtnOnClick" prefHeight="31.0" prefWidth="198.0" text="Blanket distribution" />
-      <Button layoutX="107.0" layoutY="249.0" mnemonicParsing="false" onMouseClicked="#BridgeProjectonClick" text="Project Proposal for bridge" />
+      <Button layoutX="107.0" layoutY="127.0" mnemonicParsing="false" onMouseClicked="#AllocateFoodandCashBtn" prefHeight="31.0" prefWidth="225.0" text="Allocate food and cash" />
+      <Button layoutX="107.0" layoutY="188.0" mnemonicParsing="false" onMouseClicked="#BlanketDistributionBtnOnClick" prefHeight="31.0" prefWidth="225.0" text="Blanket distribution" />
+      <Button layoutX="107.0" layoutY="249.0" mnemonicParsing="false" onMouseClicked="#BridgeProjectonClick" prefHeight="31.0" prefWidth="225.0" text="Project Proposal for bridge" />
       <Button layoutX="509.0" layoutY="329.0" mnemonicParsing="false" text="Button" />
       <Button layoutX="509.0" layoutY="249.0" mnemonicParsing="false" text="Button" />
       <Button layoutX="509.0" layoutY="188.0" mnemonicParsing="false" onMouseClicked="#FloodCenterproposalBtnOnClick" text="Flood center Proposal" />
       <Button layoutX="509.0" layoutY="127.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="107.0" layoutY="329.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="107.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#DevelopmentGoalsOnClick" prefHeight="31.0" prefWidth="225.0" text="Development Goals (KABIKHA)" />
       <Button layoutX="336.0" layoutY="452.0" mnemonicParsing="false" onMouseClicked="#BackBtnOnClick" text="Back" />
    </children>
 </AnchorPane>

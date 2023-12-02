@@ -24,50 +24,39 @@ import javafx.stage.Stage;
  *
  * @author ASUS
  */
-public class ConstructionProjectProposalController implements Initializable {
+public class DRROfloodcenterProposalController implements Initializable {
 
     @FXML
-    private TextField ProposalTextField;
+    private TextField PrposalTextField;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        String content = ProposalTextField.getText() ;
-
-    // The file to write to
-    File outputFile = new File("Proposal.txt");
-
-    try {
-        FileWriter writer = new FileWriter(outputFile);
-        writer.write(content);
-        writer.close();
-        System.out.println("Proposal written");
-    } catch (IOException e) {
-        e.printStackTrace();
-    }
-                // TODO
+        // TODO
     }    
 
     @FXML
     private void SaveBtnOnClick(MouseEvent event) {
         
-        String content = ProposalTextField.getText() ;
+        String content = PrposalTextField.getText();
 
-    // The file to write to
-    File outputFile = new File("Proposal.txt");
+        if (!content.isEmpty()) {
+            // The file to write to
+            File outputFile = new File("FloodProposal.txt");
 
-    try {
-        FileWriter writer = new FileWriter(outputFile);
-        writer.write(content);
-        writer.close();
-        System.out.println("Proposal written");
-    } catch (IOException e) {
-        e.printStackTrace();
-    }
-        
-        // TODO
+            try {
+                FileWriter writer = new FileWriter(outputFile);
+                writer.write(content);
+                writer.close();
+                System.out.println("Proposal written");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("Proposal is empty. Nothing to save.");
+        }
         
     }
 

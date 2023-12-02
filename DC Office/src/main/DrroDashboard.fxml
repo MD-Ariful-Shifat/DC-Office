@@ -17,7 +17,7 @@
       <Button layoutX="107.0" layoutY="249.0" mnemonicParsing="false" onMouseClicked="#BridgeProjectonClick" text="Project Proposal for bridge" />
       <Button layoutX="509.0" layoutY="329.0" mnemonicParsing="false" text="Button" />
       <Button layoutX="509.0" layoutY="249.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="509.0" layoutY="188.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="509.0" layoutY="188.0" mnemonicParsing="false" onMouseClicked="#FloodCenterproposalBtnOnClick" text="Flood center Proposal" />
       <Button layoutX="509.0" layoutY="127.0" mnemonicParsing="false" text="Button" />
       <Button layoutX="107.0" layoutY="329.0" mnemonicParsing="false" text="Button" />
       <Button layoutX="336.0" layoutY="452.0" mnemonicParsing="false" onMouseClicked="#BackBtnOnClick" text="Back" />

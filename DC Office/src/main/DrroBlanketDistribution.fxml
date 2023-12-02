@@ -30,7 +30,7 @@
         </columns>
       </TableView>
       <Button layoutX="543.0" layoutY="182.0" mnemonicParsing="false" onMouseClicked="#SaveBtnOnClick" text="Save Info" />
-      <Button layoutX="50.0" layoutY="474.0" mnemonicParsing="false" onMouseClicked="#LoadTableBtnOnClick" text="Load Table" />
+      <Button layoutX="50.0" layoutY="474.0" mnemonicParsing="false" onMouseClicked="#LoadTableBtnOnClick" text="Load Table and Send" />
       <Button layoutX="668.0" layoutY="474.0" mnemonicParsing="false" onMouseClicked="#BackBtnOnClick" text="Back" />
    </children>
 </AnchorPane>

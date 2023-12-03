@@ -14,7 +14,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -25,9 +27,13 @@ import javafx.stage.Stage;
 public class DCOrganizingController implements Initializable {
 
     @FXML
-    private TextArea inputTextArea;
-    @FXML
     private TextArea outputTextArea;
+    @FXML
+    private TextField eventTextField;
+    @FXML
+    private TextField locationTextField;
+    @FXML
+    private DatePicker datePicker;
 
     /**
      * Initializes the controller class.
@@ -41,9 +47,6 @@ public class DCOrganizingController implements Initializable {
     private void saveOnClick(ActionEvent event) {
     }
 
-    @FXML
-    private void deleteOnClick(ActionEvent event) {
-    }
 
     @FXML
     private void backOnClick(ActionEvent event) throws IOException {

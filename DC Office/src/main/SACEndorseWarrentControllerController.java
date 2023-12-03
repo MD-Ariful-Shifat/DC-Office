@@ -4,7 +4,6 @@
  */
 package main;
 
-import Model.SAC;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -15,8 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -26,28 +24,16 @@ import javafx.stage.Stage;
  *
  * @author USER
  */
-public class SACViewCompalinController implements Initializable {
+public class SACEndorseWarrentControllerController implements Initializable {
 
-    private SAC user;
     @FXML
-    private TableColumn<?, ?> complainColumn;
+    private TextArea outputTextArea;
     @FXML
-    private TableColumn<?, ?> contactColumn;
+    private TextField eventTextField;
     @FXML
-    private TableColumn<?, ?> addressColumn;
+    private TextField locationTextField;
     @FXML
-    private TableColumn<?, ?> personcolumn;
-    @FXML
-    private TableView<?> complainTable;
-
-    public SAC getUser() {
-        return user;
-    }
-
-    public void setUser(SAC user) {
-        this.user = user;
-    }
-    
+    private DatePicker datePicker;
 
     /**
      * Initializes the controller class.
@@ -57,9 +43,12 @@ public class SACViewCompalinController implements Initializable {
         // TODO
     }    
 
+    @FXML
+    private void saveOnClick(ActionEvent event) {
+    }
 
     @FXML
-    private void backOnClick(ActionEvent event) throws IOException {
+    private void backkOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SAC Dashboard.fxml"));
         root = (Parent) someLoader.load();
@@ -72,13 +61,6 @@ public class SACViewCompalinController implements Initializable {
         someStage.setScene(someScene);
         someStage.show();
     }
-
-    @FXML
-    private void loadOnClick(ActionEvent event) {
-    }
-
-    @FXML
-    private void saveOnClick(ActionEvent event) {
-    }
+    
     
 }

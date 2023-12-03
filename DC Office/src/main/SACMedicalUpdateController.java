@@ -37,9 +37,6 @@ public class SACMedicalUpdateController implements Initializable {
     private void saveOnClick(ActionEvent event) {
     }
 
-    @FXML
-    private void deleteOnClick(ActionEvent event) {
-    }
 
     @FXML
     private void backOnClick(ActionEvent event) throws IOException {
@@ -54,6 +51,22 @@ public class SACMedicalUpdateController implements Initializable {
         Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         someStage.setScene(someScene);
         someStage.show();
+    }
+
+    @FXML
+    private void medicalOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void hotlineOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void addressOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void loadOnClick(ActionEvent event) {
     }
     
 }

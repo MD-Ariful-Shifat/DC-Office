@@ -156,7 +156,7 @@ public class DCDashboardController implements Initializable {
     @FXML
     private void socialeventOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Event.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Social.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 

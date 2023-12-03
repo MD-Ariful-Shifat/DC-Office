@@ -10,14 +10,14 @@ import java.io.Serializable;
  *
  * @author USER
  */
-public class DCEventModel implements Serializable  {
+public class DCSocialModel implements Serializable  {
     
-    private String eventColumn,dateColumn,timeColumn,locationColumn;
+    private String eventColumn,timeColumn,dateColumn,locationColumn;
 
-    public DCEventModel(String eventColumn, String dateColumn, String timeColumn, String locationColumn) {
+    public DCSocialModel(String eventColumn, String timeColumn, String dateColumn, String locationColumn) {
         this.eventColumn = eventColumn;
-        this.dateColumn = dateColumn;
         this.timeColumn = timeColumn;
+        this.dateColumn = dateColumn;
         this.locationColumn = locationColumn;
     }
 
@@ -29,20 +29,20 @@ public class DCEventModel implements Serializable  {
         this.eventColumn = eventColumn;
     }
 
-    public String getDateColumn() {
-        return dateColumn;
-    }
-
-    public void setDateColumn(String dateColumn) {
-        this.dateColumn = dateColumn;
-    }
-
     public String getTimeColumn() {
         return timeColumn;
     }
 
     public void setTimeColumn(String timeColumn) {
         this.timeColumn = timeColumn;
+    }
+
+    public String getDateColumn() {
+        return dateColumn;
+    }
+
+    public void setDateColumn(String dateColumn) {
+        this.dateColumn = dateColumn;
     }
 
     public String getLocationColumn() {
@@ -55,11 +55,10 @@ public class DCEventModel implements Serializable  {
 
     @Override
     public String toString() {
-        return "DCEventModel{" + "eventColumn=" + eventColumn + ", dateColumn=" + dateColumn + ", timeColumn=" + timeColumn + ", locationColumn=" + locationColumn + '}';
+        return "DCSocialModel{" + "eventColumn=" + eventColumn + ", timeColumn=" + timeColumn + ", dateColumn=" + dateColumn + ", locationColumn=" + locationColumn + '}';
     }
     public void display(){
-        System.out.println("eventColumn="+eventColumn+", dateColumn="+dateColumn+", timeColumn="+timeColumn+",locationColumn="+locationColumn);
+        System.out.println("eventColumn="+eventColumn+", timeColumn="+timeColumn+", dateColumn="+dateColumn+",locationColumn="+locationColumn);
     }
 
-    
 }

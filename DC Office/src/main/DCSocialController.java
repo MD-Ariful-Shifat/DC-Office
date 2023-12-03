@@ -13,56 +13,48 @@ import java.io.ObjectOutputStream;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
-import javafx.stage.Stage;
 
 /**
  * FXML Controller class
  *
  * @author USER
  */
-public class DCEventController implements Initializable {
+public class DCSocialController implements Initializable {
 
     @FXML
-    private TableView<DCEventModel> socialTable;
+    private TableView<DCSocialModel> eventTable;
     @FXML
-    private TableColumn<DCEventModel, String> eventColumn;
+    private TableColumn<DCSocialModel, String> eventColumn;
     @FXML
-    private TableColumn<DCEventModel, String> dateColumn;
+    private TableColumn<DCSocialModel, String> timeColumn;
     @FXML
-    private TableColumn<DCEventModel, String> timeColumn;
+    private TableColumn<DCSocialModel, String> dateColumn;
     @FXML
-    private TableColumn<DCEventModel, String> locationColumn;
+    private TableColumn<DCSocialModel, String> locationColumn;
     @FXML
     private TextField eventTextField;
+    @FXML
+    private TextField dateTextField;
     @FXML
     private TextField timeTextField;
     @FXML
     private TextField locationTextField;
-    @FXML
-    private DatePicker datePicker;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        eventColumn.setCellValueFactory(new PropertyValueFactory<DCEventModel,String>("eventColumn"));
-        dateColumn.setCellValueFactory(new PropertyValueFactory<DCEventModel,String>("dateColumn"));
-        timeColumn.setCellValueFactory(new PropertyValueFactory<DCEventModel,String>("timeColumn"));
-        locationColumn.setCellValueFactory(new PropertyValueFactory<DCEventModel,String>("locationColumn"));
-
-        // TODO
+        eventColumn.setCellValueFactory(new PropertyValueFactory<DCSocialModel,String>("eventColumn"));
+        timeColumn.setCellValueFactory(new PropertyValueFactory<DCSocialModel,String>("timeColumn"));
+        dateColumn.setCellValueFactory(new PropertyValueFactory<DCSocialModel,String>("dateColumn"));
+        locationColumn.setCellValueFactory(new PropertyValueFactory<DCSocialModel,String>("locationColumn"));
     }    
 
     @FXML
@@ -70,14 +62,14 @@ public class DCEventController implements Initializable {
         FileOutputStream  fos;
         ObjectOutputStream oos;
         
-        DCEventModel sociallist = new DCEventModel(  
+        DCSocialModel sociallist = new DCSocialModel(  
                     eventColumn.getText(),
-                    dateColumn.getText(),
                     timeColumn.getText(),
+                    dateColumn.getText(),
                     locationColumn.getText()
 
                 );
-        eventColumn.setText(null);    dateColumn.setText(null);   timeColumn.setText(null); locationColumn.setText(null);
+        eventColumn.setText(null);    timeColumn.setText(null);   dateColumn.setText(null); locationColumn.setText(null);
         
         try {           
             File f = new File("Social.bin");   
@@ -98,16 +90,16 @@ public class DCEventController implements Initializable {
 
     @FXML
     private void loadOnClick(MouseEvent event) {
-        socialTable.getItems().clear();
-        socialTable.refresh();
+        eventTable.getItems().clear();
+        eventTable.refresh();
         ObjectInputStream ois=null;
          try {
-            DCEventModel sociallist;
+            DCSocialModel sociallist;
             ois = new ObjectInputStream(new FileInputStream("Social.bin"));
             while(true){
-                sociallist = (DCEventModel) ois.readObject();
+                sociallist = (DCSocialModel) ois.readObject();
                 sociallist.display();
-                socialTable.getItems().add(sociallist);
+                eventTable.getItems().add(sociallist);
             }    
            
         } catch (Exception ex) {
@@ -120,17 +112,13 @@ public class DCEventController implements Initializable {
             }
             ex.printStackTrace();
         }    finally {
-             socialTable.refresh();
-         }  
+             eventTable.refresh();
+         } 
     }
 
     @FXML
-    private void backOnClick(MouseEvent event) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("DC Dashboard.fxml"));
-         Scene scene = new Scene(parent);
-         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-         window.setScene(scene);
-         window.show();
+    private void backOnClick(MouseEvent event) {
+        
     }
     
 }

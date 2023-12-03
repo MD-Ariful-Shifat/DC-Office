@@ -1,7 +1,4 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
 package main;
 
 import com.itextpdf.io.font.FontConstants;
@@ -30,11 +27,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
-/**
- * FXML Controller class
- *
- * @author ASUS
- */
+
 public class DrroMedicineBankPDFController implements Initializable {
 
     @FXML
@@ -42,12 +35,10 @@ public class DrroMedicineBankPDFController implements Initializable {
     @FXML
     private Button backbtnfxid;
 
-    /**
-     * Initializes the controller class.
-     */
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        
     }    
 
     @FXML
@@ -126,8 +117,7 @@ public class DrroMedicineBankPDFController implements Initializable {
             Alert a = new Alert(Alert.AlertType.INFORMATION);
             a.setContentText("Oops! Exception: " + e.toString()+ " occured.");
             a.showAndWait(); 
-            //System.out.println("Something went wrong...");
-            //System.out.println(e);
+            
         }
     }
     
@@ -148,3 +138,4 @@ public class DrroMedicineBankPDFController implements Initializable {
     }
     
 }
+*/

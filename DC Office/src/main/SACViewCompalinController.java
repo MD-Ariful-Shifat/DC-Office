@@ -5,7 +5,12 @@
 package main;
 
 import Model.SAC;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -19,6 +24,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 /**
@@ -30,32 +37,37 @@ public class SACViewCompalinController implements Initializable {
 
     private SAC user;
     @FXML
-    private TableColumn<?, ?> complainColumn;
+    private TableColumn<SACViewComplainModel, String> complainColumn;
     @FXML
-    private TableColumn<?, ?> contactColumn;
+    private TableColumn<SACViewComplainModel, String> contactColumn;
     @FXML
-    private TableColumn<?, ?> addressColumn;
+    private TableColumn<SACViewComplainModel, String> addressColumn;
     @FXML
-    private TableColumn<?, ?> personcolumn;
+    private TableColumn<SACViewComplainModel, String> personcolumn;
     @FXML
-    private TableView<?> complainTable;
-
-    public SAC getUser() {
-        return user;
-    }
-
-    public void setUser(SAC user) {
-        this.user = user;
-    }
-    
+    private TableView<SACViewComplainModel> complainTable;
+    @FXML
+    private TextField addressTextField;
+    @FXML
+    private TextField personTextField;
+    @FXML
+    private TextField contacTextField;
+    @FXML
+    private TextField complainTextField;
 
     /**
      * Initializes the controller class.
      */
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+     public void initialize(URL url, ResourceBundle rb) {
+        
+        complainColumn.setCellValueFactory(new PropertyValueFactory<SACViewComplainModel,String>("complainColumn"));
+        contactColumn.setCellValueFactory(new PropertyValueFactory<SACViewComplainModel,String>("contactColumn"));
+        addressColumn.setCellValueFactory(new PropertyValueFactory<SACViewComplainModel,String>("addressColumn"));
+        personcolumn.setCellValueFactory(new PropertyValueFactory<SACViewComplainModel,String>("personcolumn"));
+
+         
+    }     
 
 
     @FXML
@@ -74,11 +86,62 @@ public class SACViewCompalinController implements Initializable {
     }
 
     @FXML
-    private void loadOnClick(ActionEvent event) {
+    private void loadOnClick(MouseEvent event) {
+        complainTable.getItems().clear();
+        complainTable.refresh();
+        ObjectInputStream ois=null;
+         try {
+            SACViewComplainModel complainlist;
+            ois = new ObjectInputStream(new FileInputStream("Complain.bin"));
+            while(true){
+                complainlist = (SACViewComplainModel) ois.readObject();
+                complainlist.display();
+                complainTable.getItems().add(complainlist);
+            }    
+           
+        } catch (Exception ex) {
+            try {
+                if(ois!=null)
+                    ois.close();
+            } 
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+            ex.printStackTrace();
+        }    finally {
+             complainTable.refresh();
+         }  
     }
 
     @FXML
-    private void saveOnClick(ActionEvent event) {
+    private void saveOnClick(MouseEvent event) {
+        FileOutputStream  fos;
+        ObjectOutputStream oos;
+        
+        SACViewComplainModel complainlist = new SACViewComplainModel(  
+                    complainColumn.getText(),
+                    contactColumn.getText(),
+                    addressColumn.getText(),
+                    personcolumn.getText()
+
+                );
+        complainColumn.setText(null);    contactColumn.setText(null);   addressColumn.setText(null); personcolumn.setText(null);
+        
+        try {           
+            File f = new File("Complain.bin");   
+            if (f.exists()){
+                fos = new FileOutputStream(f,true);
+                oos = new AppendableObjectOutputStream(fos);
+            } else {
+                fos = new FileOutputStream(f);
+                oos = new ObjectOutputStream(fos);                
+            }
+            oos.writeObject(complainlist);
+            System.out.println(oos.toString());
+            oos.close();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
     
 }

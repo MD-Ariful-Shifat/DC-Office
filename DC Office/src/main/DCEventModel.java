@@ -12,53 +12,54 @@ import java.io.Serializable;
  */
 public class DCEventModel implements Serializable  {
     
-    private String eventTextField,dateTextField,timeTextFiled,locationTextField;
+    private String eventColumn,dateColumn,timeColumn,locationColumn;
 
-    public DCEventModel(String eventTextField, String dateTextField, String timeTextFiled, String locationTextField) {
-        this.eventTextField = eventTextField;
-        this.dateTextField = dateTextField;
-        this.timeTextFiled = timeTextFiled;
-        this.locationTextField = locationTextField;
+    public DCEventModel(String eventColumn, String dateColumn, String timeColumn, String locationColumn) {
+        this.eventColumn = eventColumn;
+        this.dateColumn = dateColumn;
+        this.timeColumn = timeColumn;
+        this.locationColumn = locationColumn;
     }
 
-    public String getEventTextField() {
-        return eventTextField;
+    public String getEventColumn() {
+        return eventColumn;
     }
 
-    public void setEventTextField(String eventTextField) {
-        this.eventTextField = eventTextField;
+    public void setEventColumn(String eventColumn) {
+        this.eventColumn = eventColumn;
     }
 
-    public String getDateTextField() {
-        return dateTextField;
+    public String getDateColumn() {
+        return dateColumn;
     }
 
-    public void setDateTextField(String dateTextField) {
-        this.dateTextField = dateTextField;
+    public void setDateColumn(String dateColumn) {
+        this.dateColumn = dateColumn;
     }
 
-    public String getTimeTextFiled() {
-        return timeTextFiled;
+    public String getTimeColumn() {
+        return timeColumn;
     }
 
-    public void setTimeTextFiled(String timeTextFiled) {
-        this.timeTextFiled = timeTextFiled;
+    public void setTimeColumn(String timeColumn) {
+        this.timeColumn = timeColumn;
     }
 
-    public String getLocationTextField() {
-        return locationTextField;
+    public String getLocationColumn() {
+        return locationColumn;
     }
 
-    public void setLocationTextField(String locationTextField) {
-        this.locationTextField = locationTextField;
+    public void setLocationColumn(String locationColumn) {
+        this.locationColumn = locationColumn;
     }
 
     @Override
     public String toString() {
-        return "DCEventModel{" + "eventTextField=" + eventTextField + ", dateTextField=" + dateTextField + ", timeTextFiled=" + timeTextFiled + ", locationTextField=" + locationTextField + '}';
+        return "DCEventModel{" + "eventColumn=" + eventColumn + ", dateColumn=" + dateColumn + ", timeColumn=" + timeColumn + ", locationColumn=" + locationColumn + '}';
     }
     public void display(){
-        System.out.println("eventTextField="+eventTextField+", dateTextField="+dateTextField+", timeTextFiled="+timeTextFiled+",locationTextField="+locationTextField);
-    }    
+        System.out.println("eventColumn="+eventColumn+", dateColumn="+dateColumn+", timeColumn="+timeColumn+",locationColumn="+locationColumn);
+    }
+
     
 }

@@ -54,5 +54,9 @@ public class UNOdashBoardController implements Initializable {
 
         
     }
+
+    @FXML
+    private void InstituteBtnonClick(MouseEvent event) {
+    }
     
 }

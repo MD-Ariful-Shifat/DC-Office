@@ -18,7 +18,7 @@
       <Button layoutX="115.0" layoutY="339.0" mnemonicParsing="false" text="Button" />
       <Button layoutX="521.0" layoutY="339.0" mnemonicParsing="false" onMouseClicked="#SheetBtnOnClick" text="View Distribution Sheet" />
       <Button layoutX="521.0" layoutY="261.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="521.0" layoutY="185.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="521.0" layoutY="185.0" mnemonicParsing="false" onMouseClicked="#InstituteBtnonClick" text="Educational institute" />
       <Button layoutX="521.0" layoutY="120.0" mnemonicParsing="false" text="Button" />
       <Button layoutX="336.0" layoutY="453.0" mnemonicParsing="false" onMouseClicked="#BackBtnonClick" text="Back" />
    </children>

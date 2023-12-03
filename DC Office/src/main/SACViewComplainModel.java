@@ -18,48 +18,47 @@ public class SACViewComplainModel implements Serializable  {
         this.complainColumn = complainColumn;
         this.contactColumn = contactColumn;
         this.addressColumn = addressColumn;
-        this.addressColumn = personcolumn;
-    }
-
-    public String getSchoolcolumn() {
-        return complainColumn;
-    }
-
-    public String getPrincipalColumn() {
-        return contactColumn;
-    }
-
-    public String getHotlineColumn() {
-        return addressColumn;
-    }
-
-    public String getAddressColumn() {
-        return personcolumn;
-    }
-
-    public void setSchoolcolumn(String schoolcolumn) {
-        this.complainColumn = complainColumn;
-    }
-
-    public void setPrincipalColumn(String principalColumn) {
-        this.contactColumn = contactColumn;
-    }
-
-    public void setHotlineColumn(String hotlineColumn) {
-        this.addressColumn = addressColumn;
-    }
-
-    public void setAddressColumn(String addressColumn) {
         this.personcolumn = personcolumn;
     }
 
-    
+    public String getComplainColumn() {
+        return complainColumn;
+    }
+
+    public void setComplainColumn(String complainColumn) {
+        this.complainColumn = complainColumn;
+    }
+
+    public String getContactColumn() {
+        return contactColumn;
+    }
+
+    public void setContactColumn(String contactColumn) {
+        this.contactColumn = contactColumn;
+    }
+
+    public String getAddressColumn() {
+        return addressColumn;
+    }
+
+    public void setAddressColumn(String addressColumn) {
+        this.addressColumn = addressColumn;
+    }
+
+    public String getPersoncolumn() {
+        return personcolumn;
+    }
+
+    public void setPersoncolumn(String personcolumn) {
+        this.personcolumn = personcolumn;
+    }
+
     @Override
     public String toString() {
         return "SACViewComplainModel{" + "complainColumn=" + complainColumn + ", contactColumn=" + contactColumn + ", addressColumn=" + addressColumn + ", personcolumn=" + personcolumn + '}';
     }
     public void display(){
-        System.out.println("complainColumn="+complainColumn+", contactColumn="+contactColumn+", addressColumn="+addressColumn+",personcolumn="+personcolumn);
-    }
+        System.out.println("complainColumn="+complainColumn+", contactColumn="+contactColumn+", addressColumn="+addressColumn+", personcolumn=" + personcolumn);
 
+}
 }

@@ -86,7 +86,7 @@ public class SACViewCompalinController implements Initializable {
     }
 
     @FXML
-    private void loadOnClick(MouseEvent event) {
+     private void loadOnClick(MouseEvent event) {
         complainTable.getItems().clear();
         complainTable.refresh();
         ObjectInputStream ois=null;
@@ -110,7 +110,7 @@ public class SACViewCompalinController implements Initializable {
             ex.printStackTrace();
         }    finally {
              complainTable.refresh();
-         }  
+         }
     }
 
     @FXML
@@ -119,13 +119,13 @@ public class SACViewCompalinController implements Initializable {
         ObjectOutputStream oos;
         
         SACViewComplainModel complainlist = new SACViewComplainModel(  
-                    complainColumn.getText(),
-                    contactColumn.getText(),
-                    addressColumn.getText(),
-                    personcolumn.getText()
+                    complainTextField.getText(),
+                    contacTextField.getText(),
+                    addressTextField.getText(),
+                    personTextField.getText()
 
                 );
-        complainColumn.setText(null);    contactColumn.setText(null);   addressColumn.setText(null); personcolumn.setText(null);
+        complainTextField.setText(null);    contacTextField.setText(null);   addressTextField.setText(null); personTextField.setText(null);
         
         try {           
             File f = new File("Complain.bin");   

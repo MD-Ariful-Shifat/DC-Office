@@ -13,12 +13,17 @@ import java.io.ObjectOutputStream;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -63,13 +68,13 @@ public class DCSocialController implements Initializable {
         ObjectOutputStream oos;
         
         DCSocialModel sociallist = new DCSocialModel(  
-                    eventColumn.getText(),
-                    timeColumn.getText(),
-                    dateColumn.getText(),
-                    locationColumn.getText()
+                    eventTextField.getText(),
+                    timeTextField.getText(),
+                    dateTextField.getText(),
+                    locationTextField.getText()
 
                 );
-        eventColumn.setText(null);    timeColumn.setText(null);   dateColumn.setText(null); locationColumn.setText(null);
+        eventTextField.setText(null);    timeTextField.setText(null);   dateTextField.setText(null); locationTextField.setText(null);
         
         try {           
             File f = new File("Social.bin");   
@@ -117,7 +122,18 @@ public class DCSocialController implements Initializable {
     }
 
     @FXML
-    private void backOnClick(MouseEvent event) {
+    private void backOnClick(MouseEvent event) throws IOException {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Dashboard.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
         
     }
     

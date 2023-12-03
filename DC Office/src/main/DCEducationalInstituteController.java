@@ -25,6 +25,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 /**
@@ -68,67 +69,21 @@ public class DCEducationalInstituteController implements Initializable {
          
     }  
 
-    @FXML
-    private void saveOnClick(ActionEvent event) {
-       FileOutputStream  fos;
-        ObjectOutputStream oos;
-        
-        DrroAllocateTable cashitem = new DrroAllocateTable(  
-                    schoolTextField.getText(),
-                    principalTextField.getText(),
-                    hotTextField.getText(),
-                    addressTextField.getText()
-
-                );
-        schoolTextField.setText(null);    principalTextField.setText(null);   hotTextField.setText(null); addressTextField.setText(null);
-        
-        try {           
-            File f = new File("EducationInstitute.bin");   
-            if (f.exists()){
-                fos = new FileOutputStream(f,true);
-                oos = new AppendableObjectOutputStream(fos);
-            } else {
-                fos = new FileOutputStream(f);
-                oos = new ObjectOutputStream(fos);                
-            }
-            oos.writeObject(cashitem);
-            System.out.println(oos.toString());
-            oos.close();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-        
-    }    
-    
-
+  
 
     @FXML
-    private void backOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Dashboard.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
-    }
-
-    @FXML
-    private void loadOnClick(ActionEvent event) {
+    private void LoadTableBtnOnClick(MouseEvent event) {
+        
         educationTable.getItems().clear();
         educationTable.refresh();
         ObjectInputStream ois=null;
          try {
-            DCEducationalInstituteModel educationlist;
-            ois = new ObjectInputStream(new FileInputStream("EducationInstitute.bin"));
+            DCEducationalInstituteModel institutelist;
+            ois = new ObjectInputStream(new FileInputStream("Institute.bin"));
             while(true){
-                educationlist = (DCEducationalInstituteModel) ois.readObject();
-                educationlist.display();
-                educationTable.getItems().add(educationlist);
+                institutelist = (DCEducationalInstituteModel) ois.readObject();
+                institutelist.display();
+                educationTable.getItems().add(institutelist);
             }    
            
         } catch (Exception ex) {
@@ -143,7 +98,55 @@ public class DCEducationalInstituteController implements Initializable {
         }    finally {
              educationTable.refresh();
          }    
+        
+    }
+
+    @FXML
+    private void BackBtnOnClick(MouseEvent event) throws IOException {
+        
+        Parent parent = FXMLLoader.load(getClass().getResource("DC Dashboard.fxml"));
+         Scene scene = new Scene(parent);
+         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+         window.setScene(scene);
+         window.show();
+        
+    }
+
+    @FXML
+    private void SaveBtnOnClick(MouseEvent event) {
+        
+        FileOutputStream  fos;
+        ObjectOutputStream oos;
+        
+        DCEducationalInstituteModel institutelist = new DCEducationalInstituteModel(  
+                    schoolTextField.getText(),
+                    principalTextField.getText(),
+                    hotTextField.getText(),
+                    addressTextField.getText()
+
+                );
+        schoolTextField.setText(null);    principalTextField.setText(null);   hotTextField.setText(null); addressTextField.setText(null);
+        
+        try {           
+            File f = new File("Institute.bin");   
+            if (f.exists()){
+                fos = new FileOutputStream(f,true);
+                oos = new AppendableObjectOutputStream(fos);
+            } else {
+                fos = new FileOutputStream(f);
+                oos = new ObjectOutputStream(fos);                
+            }
+            oos.writeObject(institutelist);
+            System.out.println(oos.toString());
+            oos.close();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
   
     }
+
+        
+    
     
 }

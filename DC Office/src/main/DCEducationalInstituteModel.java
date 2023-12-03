@@ -20,40 +20,40 @@ public class DCEducationalInstituteModel implements Serializable  {
         this.hotlineColumn = hotlineColumn;
         this.addressColumn = addressColumn;
     }
-    
 
     public String getSchoolcolumn() {
         return schoolcolumn;
-    }
-
-    public void setSchoolcolumn(String schoolcolumn) {
-        this.schoolcolumn = schoolcolumn;
     }
 
     public String getPrincipalColumn() {
         return principalColumn;
     }
 
-    public void setPrincipalColumn(String principalColumn) {
-        this.principalColumn = principalColumn;
-    }
-
     public String getHotlineColumn() {
         return hotlineColumn;
-    }
-
-    public void setHotlineColumn(String hotlineColumn) {
-        this.hotlineColumn = hotlineColumn;
     }
 
     public String getAddressColumn() {
         return addressColumn;
     }
 
+    public void setSchoolcolumn(String schoolcolumn) {
+        this.schoolcolumn = schoolcolumn;
+    }
+
+    public void setPrincipalColumn(String principalColumn) {
+        this.principalColumn = principalColumn;
+    }
+
+    public void setHotlineColumn(String hotlineColumn) {
+        this.hotlineColumn = hotlineColumn;
+    }
+
     public void setAddressColumn(String addressColumn) {
         this.addressColumn = addressColumn;
     }
 
+    
     @Override
     public String toString() {
         return "DCEducationalInstituteModel{" + "schoolcolumn=" + schoolcolumn + ", principalColumn=" + principalColumn + ", hotlineColumn=" + hotlineColumn + ", addressColumn=" + addressColumn + '}';

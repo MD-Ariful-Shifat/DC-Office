@@ -11,24 +11,24 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.DCEducationalInstituteController">
    <children>
-      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="522.0" prefWidth="742.0">
+      <AnchorPane id="AnchorPane" layoutY="5.0" prefHeight="522.0" prefWidth="742.0">
          <children>
             <Text layoutX="27.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update of educational institute:">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <Button layoutX="42.0" layoutY="429.0" mnemonicParsing="false" onAction="#loadOnClick" prefHeight="30.0" prefWidth="100.0" text="Load Table">
+            <Button layoutX="42.0" layoutY="429.0" mnemonicParsing="false" onMouseClicked="#LoadTableBtnOnClick" prefHeight="30.0" prefWidth="100.0" text="Load Table">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button layoutX="635.0" layoutY="429.0" mnemonicParsing="false" onAction="#backOnClick" text="&lt;&lt; Back">
+            <Button layoutX="635.0" layoutY="429.0" mnemonicParsing="false" onMouseClicked="#BackBtnOnClick" text="&lt;&lt; Back">
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <TextField fx:id="schoolTextField" layoutX="102.0" layoutY="93.0" />
-            <TextField fx:id="hotTextField" layoutX="102.0" layoutY="132.0" />
+            <TextField fx:id="schoolTextField" layoutX="122.0" layoutY="93.0" />
+            <TextField fx:id="hotTextField" layoutX="122.0" layoutY="131.0" />
             <TextField fx:id="principalTextField" layoutX="538.0" layoutY="93.0" />
             <TextField fx:id="addressTextField" layoutX="538.0" layoutY="132.0" />
             <TableView fx:id="educationTable" layoutX="42.0" layoutY="206.0" prefHeight="200.0" prefWidth="661.0">
@@ -43,7 +43,7 @@
             <Label layoutX="14.0" layoutY="136.0" text="Hotline number:" />
             <Label layoutX="466.0" layoutY="97.0" text="Principal:" />
             <Label layoutX="470.0" layoutY="136.0" text="Addess:" />
-            <Button layoutX="317.0" layoutY="164.0" mnemonicParsing="false" onAction="#saveOnClick" prefHeight="30.0" prefWidth="72.0" text="Save">
+            <Button layoutX="317.0" layoutY="164.0" mnemonicParsing="false" onMouseClicked="#SaveBtnOnClick" prefHeight="30.0" prefWidth="72.0" text="Save">
                <font>
                   <Font size="14.0" />
                </font>

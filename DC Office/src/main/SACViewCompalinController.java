@@ -15,7 +15,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -26,6 +29,16 @@ import javafx.stage.Stage;
 public class SACViewCompalinController implements Initializable {
 
     private SAC user;
+    @FXML
+    private TableColumn<?, ?> complainColumn;
+    @FXML
+    private TableColumn<?, ?> contactColumn;
+    @FXML
+    private TableColumn<?, ?> addressColumn;
+    @FXML
+    private TableColumn<?, ?> personcolumn;
+    @FXML
+    private TableView<?> complainTable;
 
     public SAC getUser() {
         return user;
@@ -58,6 +71,14 @@ public class SACViewCompalinController implements Initializable {
         Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         someStage.setScene(someScene);
         someStage.show();
+    }
+
+    @FXML
+    private void loadOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void saveOnClick(ActionEvent event) {
     }
     
 }

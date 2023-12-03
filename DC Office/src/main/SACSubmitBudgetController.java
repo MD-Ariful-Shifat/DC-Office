@@ -41,9 +41,6 @@ public class SACSubmitBudgetController implements Initializable {
     private void saveOnClick(ActionEvent event) {
     }
 
-    @FXML
-    private void deleteOnClick(ActionEvent event) {
-    }
 
     @FXML
     private void backOnClick(ActionEvent event) throws IOException {

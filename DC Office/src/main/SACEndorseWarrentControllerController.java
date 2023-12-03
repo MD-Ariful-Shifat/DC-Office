@@ -24,7 +24,7 @@ import javafx.stage.Stage;
  *
  * @author USER
  */
-public class DCOrganizingController implements Initializable {
+public class SACEndorseWarrentControllerController implements Initializable {
 
     @FXML
     private TextArea outputTextArea;
@@ -47,11 +47,10 @@ public class DCOrganizingController implements Initializable {
     private void saveOnClick(ActionEvent event) {
     }
 
-
     @FXML
-    private void backOnClick(ActionEvent event) throws IOException {
+    private void backkOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Dashboard.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SAC Dashboard.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
@@ -62,5 +61,6 @@ public class DCOrganizingController implements Initializable {
         someStage.setScene(someScene);
         someStage.show();
     }
+    
     
 }

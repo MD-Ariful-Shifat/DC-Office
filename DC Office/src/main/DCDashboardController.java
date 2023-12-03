@@ -42,25 +42,6 @@ public class DCDashboardController implements Initializable {
 
 
     @FXML
-    private void signoutOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SignIn Page.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
-        
-        System.out.println(this.user.toString());
-
-        /*SignInPageController p = someLoader.getController();
-        p.setUser( this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
-
-
-    }
-
-    @FXML
     private void localOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC updates notes.fxml"));
@@ -152,22 +133,28 @@ public class DCDashboardController implements Initializable {
     }
 
     @FXML
-    private void addOnClick(ActionEvent event) throws IOException {
+    private void meetingOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void taxOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void signouutOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Add User.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SignIn Page.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
+        
+/*        System.out.println(this.user.toString());
 
-        DCAddUserController p = someLoader.getController();
-        p.setUser( this.user);
+        /*SignInPageController p = someLoader.getController();
+        p.setUser( this.user);*/
 
         Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         someStage.setScene(someScene);
         someStage.show();
-    }
-
-    @FXML
-    private void meetingOnClick(ActionEvent event) {
     }
     
 }

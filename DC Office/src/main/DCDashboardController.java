@@ -105,7 +105,7 @@ public class DCDashboardController implements Initializable {
     @FXML
     private void socialOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Organizing.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Event.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
@@ -137,7 +137,18 @@ public class DCDashboardController implements Initializable {
     }
 
     @FXML
-    private void taxOnClick(ActionEvent event) {
+    private void taxOnClick(ActionEvent event) throws IOException {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Personal Tax.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
 
     @FXML

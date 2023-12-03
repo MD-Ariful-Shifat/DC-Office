@@ -15,6 +15,7 @@ import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Text;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -135,9 +136,9 @@ public class DrroMedicineBankPDFController implements Initializable {
     }
 
     @FXML
-    private void BackBtnOnClick(MouseEvent event) {
+    private void BackBtnOnClick(MouseEvent event) throws IOException {
         
-                Parent parent = FXMLLoader.load(getClass().getResource("DrroDashboard.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("DrroDashboard.fxml"));
          Scene scene = new Scene(parent);
          Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
          window.setScene(scene);

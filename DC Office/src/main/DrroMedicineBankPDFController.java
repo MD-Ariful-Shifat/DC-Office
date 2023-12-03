@@ -1,4 +1,4 @@
-/*
+
 package main;
 
 import com.itextpdf.io.font.FontConstants;
@@ -138,4 +138,3 @@ public class DrroMedicineBankPDFController implements Initializable {
     }
     
 }
-*/

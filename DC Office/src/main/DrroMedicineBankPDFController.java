@@ -56,7 +56,6 @@ public class DrroMedicineBankPDFController implements Initializable {
         {
                 try{
                     
-           
             FileChooser fc = new FileChooser();
             fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("PDF files", "*.pdf"));
             fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("Image files", "*.jpg", "*.bmp", "*.png"));
@@ -86,6 +85,7 @@ public class DrroMedicineBankPDFController implements Initializable {
                 Text title = new Text("Why Us ??").setFont(fontBold);
             
                 Paragraph bookInfo = new Paragraph().add(title);
+                
                 
                 doc.add(pageTitle);
                 doc.add(lineSpace);

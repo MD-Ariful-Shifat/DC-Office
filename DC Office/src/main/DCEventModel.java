@@ -12,13 +12,13 @@ import java.io.Serializable;
  */
 public class DCEventModel implements Serializable  {
     
-    private String eventTextField,locationTextField,dateTextField,timeTextFiled;
+    private String eventTextField,dateTextField,timeTextFiled,locationTextField;
 
-    public DCEventModel(String eventTextField, String locationTextField, String dateTextField, String timeTextFiled) {
+    public DCEventModel(String eventTextField, String dateTextField, String timeTextFiled, String locationTextField) {
         this.eventTextField = eventTextField;
-        this.locationTextField = locationTextField;
         this.dateTextField = dateTextField;
         this.timeTextFiled = timeTextFiled;
+        this.locationTextField = locationTextField;
     }
 
     public String getEventTextField() {
@@ -27,14 +27,6 @@ public class DCEventModel implements Serializable  {
 
     public void setEventTextField(String eventTextField) {
         this.eventTextField = eventTextField;
-    }
-
-    public String getLocationTextField() {
-        return locationTextField;
-    }
-
-    public void setLocationTextField(String locationTextField) {
-        this.locationTextField = locationTextField;
     }
 
     public String getDateTextField() {
@@ -53,11 +45,20 @@ public class DCEventModel implements Serializable  {
         this.timeTextFiled = timeTextFiled;
     }
 
+    public String getLocationTextField() {
+        return locationTextField;
+    }
+
+    public void setLocationTextField(String locationTextField) {
+        this.locationTextField = locationTextField;
+    }
+
     @Override
     public String toString() {
-        return "DCEventModel{" + "eventTextField=" + eventTextField + ", locationTextField=" + locationTextField + ", dateTextField=" + dateTextField + ", timeTextFiled=" + timeTextFiled + '}';
+        return "DCEventModel{" + "eventTextField=" + eventTextField + ", dateTextField=" + dateTextField + ", timeTextFiled=" + timeTextFiled + ", locationTextField=" + locationTextField + '}';
     }
     public void display(){
-        System.out.println("eventTextField="+eventTextField+", locationTextField="+locationTextField+", dateTextField="+dateTextField+",timeTextFiled="+timeTextFiled);
-    }
+        System.out.println("eventTextField="+eventTextField+", dateTextField="+dateTextField+", timeTextFiled="+timeTextFiled+",locationTextField="+locationTextField);
+    }    
+    
 }

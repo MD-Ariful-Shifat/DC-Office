@@ -29,7 +29,7 @@
       <Text layoutX="62.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" />
       <Text layoutX="482.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time::" />
       <Text layoutX="482.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location:" />
-      <TextField fx:id="eventTextField" layoutX="137.0" layoutY="132.0" />
+      <TextField fx:id="eventTextField" layoutX="137.0" layoutY="132.0" prefHeight="25.0" prefWidth="174.0" />
       <TextField fx:id="timeTextField" layoutX="546.0" layoutY="132.0" />
       <TextField fx:id="locationTextField" layoutX="546.0" layoutY="163.0" />
       <DatePicker fx:id="datePicker" layoutX="137.0" layoutY="163.0" />

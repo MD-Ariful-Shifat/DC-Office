@@ -39,46 +39,44 @@ public class DCEventController implements Initializable {
     @FXML
     private TableColumn<DCEventModel, String> eventTextField;
     @FXML
-    private TextField timeTextField;
-    @FXML
-    private TableColumn<DCEventModel, String> locationTextField;
-    @FXML
-    private DatePicker datePicker;
-    @FXML
     private TableColumn<DCEventModel, String> dateTextField;
     @FXML
     private TableColumn<DCEventModel, String> timeTextFiled;
+    @FXML
+    private TableColumn<DCEventModel, String> locationTextField;
+    @FXML
+    private TextField timeTextField;
+    @FXML
+    private DatePicker datePicker;
 
-    /**
+  /**
      * Initializes the controller class.
      */
     @Override
      public void initialize(URL url, ResourceBundle rb) {
-        
         eventTextField.setCellValueFactory(new PropertyValueFactory<DCEventModel,String>("eventTextField"));
-        locationTextField.setCellValueFactory(new PropertyValueFactory<DCEventModel,String>("locationTextField"));
         dateTextField.setCellValueFactory(new PropertyValueFactory<DCEventModel,String>("dateTextField"));
         timeTextFiled.setCellValueFactory(new PropertyValueFactory<DCEventModel,String>("timeTextFiled"));
-
-         
-    }     
+        locationTextField.setCellValueFactory(new PropertyValueFactory<DCEventModel,String>("locationTextField"));
+        
+    }      
 
     @FXML
     private void saveOnClick(MouseEvent event) {
         FileOutputStream  fos;
         ObjectOutputStream oos;
         
-        DCEventModel eventslist = new DCEventModel(  
+        DCEventModel eventlist = new DCEventModel(  
                     eventTextField.getText(),
-                    locationTextField.getText(),
                     dateTextField.getText(),
-                    timeTextFiled.getText()
+                    timeTextFiled.getText(),
+                    locationTextField.getText()
 
                 );
-        eventTextField.setText(null);    locationTextField.setText(null);   dateTextField.setText(null); timeTextFiled.setText(null);
+        eventTextField.setText(null); dateTextField.setText(null); timeTextFiled.setText(null); locationTextField.setText(null);
         
         try {           
-            File f = new File("Events.bin");   
+            File f = new File("Event.bin");   
             if (f.exists()){
                 fos = new FileOutputStream(f,true);
                 oos = new AppendableObjectOutputStream(fos);
@@ -86,12 +84,13 @@ public class DCEventController implements Initializable {
                 fos = new FileOutputStream(f);
                 oos = new ObjectOutputStream(fos);                
             }
-            oos.writeObject(eventslist);
+            oos.writeObject(eventlist);
             System.out.println(oos.toString());
             oos.close();
         } catch (Exception ex) {
             ex.printStackTrace();
         }
+        
     }
 
     @FXML
@@ -100,12 +99,12 @@ public class DCEventController implements Initializable {
         socialTable.refresh();
         ObjectInputStream ois=null;
          try {
-            DCEventModel eventslist;
-            ois = new ObjectInputStream(new FileInputStream("Events.bin"));
+            DCEventModel eventlist;
+            ois = new ObjectInputStream(new FileInputStream("Event.bin"));
             while(true){
-                eventslist = (DCEventModel) ois.readObject();
-                eventslist.display();
-                socialTable.getItems().add(eventslist);
+                eventlist = (DCEventModel) ois.readObject();
+                eventlist.display();
+                socialTable.getItems().add(eventlist);
             }    
            
         } catch (Exception ex) {
@@ -119,22 +118,18 @@ public class DCEventController implements Initializable {
             ex.printStackTrace();
         }    finally {
              socialTable.refresh();
-         }
+         }  
+         
     }
 
     @FXML
     private void backOnClick(MouseEvent event) throws IOException{
-         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Event.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
+        Parent parent = FXMLLoader.load(getClass().getResource("DC Dashboard.fxml"));
+         Scene scene = new Scene(parent);
+         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+         window.setScene(scene);
+         window.show();
+         
     }
     
 

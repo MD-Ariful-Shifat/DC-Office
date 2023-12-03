@@ -41,5 +41,22 @@ public class UNOdashBoardController implements Initializable {
          window.show();
         
     }
+
+    @FXML
+    private void SheetBtnOnClick(MouseEvent event) throws IOException {
+        
+        Parent parent = FXMLLoader.load(getClass().getResource("UNOdistributionSheet.fxml"));
+         Scene scene = new Scene(parent);
+         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+         window.setScene(scene);
+         window.show();
+        
+
+        
+    }
+
+    @FXML
+    private void InstituteBtnonClick(MouseEvent event) {
+    }
     
 }

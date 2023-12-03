@@ -18,7 +18,7 @@
       <Button layoutX="509.0" layoutY="329.0" mnemonicParsing="false" text="Button" />
       <Button layoutX="462.0" layoutY="249.0" mnemonicParsing="false" onMouseClicked="#RehabilatationBtnOnClick" prefHeight="31.0" prefWidth="225.0" text="Rehabilitation Proposal " />
       <Button layoutX="462.0" layoutY="188.0" mnemonicParsing="false" onMouseClicked="#FloodCenterproposalBtnOnClick" prefHeight="31.0" prefWidth="225.0" text="Flood center Proposal" />
-      <Button layoutX="509.0" layoutY="127.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="458.0" layoutY="127.0" mnemonicParsing="false" onMouseClicked="#ProgressReportBtnOnClick" prefHeight="31.0" prefWidth="225.0" text="Progress Report" />
       <Button layoutX="107.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#DevelopmentGoalsOnClick" prefHeight="31.0" prefWidth="225.0" text="Development Goals (KABIKHA)" />
       <Button layoutX="336.0" layoutY="452.0" mnemonicParsing="false" onMouseClicked="#BackBtnOnClick" text="Back" />
    </children>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="615.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.DRROProgressReportController">
+   <children>
+      <Label layoutX="273.0" layoutY="38.0" text="Empoyment Progress Report">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <LineChart fx:id="lineChart" layoutX="69.0" layoutY="108.0" prefHeight="400.0" prefWidth="738.0">
+        <xAxis>
+          <CategoryAxis label="Month" prefHeight="41.0" prefWidth="607.0" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Emplyed Villagers and School going  Girls" prefHeight="329.0" prefWidth="73.0" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Button fx:id="ChartBtn" layoutX="111.0" layoutY="537.0" mnemonicParsing="false" onMouseClicked="#LoadChartBtnOnClick" text="Load Chart" />
+      <Button layoutX="742.0" layoutY="537.0" mnemonicParsing="false" onMouseClicked="#BackBtnOnClick" text="Back" />
+      <Label fx:id="ChartLabel" layoutX="405.0" layoutY="508.0" text="Line Chart" />
+   </children>
+</AnchorPane>

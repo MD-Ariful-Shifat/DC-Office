@@ -87,14 +87,17 @@ public class DrroDevelopmentGoalsController implements Initializable {
     @FXML
     private void ShowReportBtnOnClick(MouseEvent event) {
         
-        OutputTextArea.setText(null);
-        for (DrroDevelopmentModel model : DevArr) {
-            String str = "Number of Employed Villagers=" + model.getVillagersTextField() +
-                         ", Constructed Roads=" + model.getRoadsTextField() +
-                         ", Constructed Ponds=" + model.getPondsTextField() +
-                         ", Goal Achieving Year=" + model.getYearTextField();
-            OutputTextArea.appendText(str + "\n");
-        }
+        File f = new File("DevelopmentGoals.txt");
+        Scanner sc;
+        String str = null;
+        try{
+            sc = new Scanner(f);
+            OutputTextArea.setText(null);
+            while(sc.hasNextLine()){
+                str = sc.nextLine();
+                OutputTextArea.appendText(str + "\n");
+            }
+        } catch (Exception e) {};
 
         
     }

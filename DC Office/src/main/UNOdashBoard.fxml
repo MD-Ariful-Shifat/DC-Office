@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="568.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.UNOdashBoardController">
+   <children>
+      <Label layoutX="266.0" layoutY="37.0" text="UNO DashBoard">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="115.0" layoutY="120.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="115.0" layoutY="185.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="115.0" layoutY="269.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="115.0" layoutY="339.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="521.0" layoutY="339.0" mnemonicParsing="false" onMouseClicked="#SheetBtnOnClick" text="View Distribution Sheet" />
+      <Button layoutX="521.0" layoutY="261.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="521.0" layoutY="185.0" mnemonicParsing="false" onMouseClicked="#InstituteBtnonClick" text="Educational institute" />
+      <Button layoutX="521.0" layoutY="120.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="336.0" layoutY="453.0" mnemonicParsing="false" onMouseClicked="#BackBtnonClick" text="Back" />
+   </children>
+</AnchorPane>

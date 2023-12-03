@@ -48,8 +48,8 @@ public class SACDashboardController implements Initializable {
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
-        SACViewCompalinController p = someLoader.getController();
-        p.setUser(this.user);
+        /*SACViewCompalinController p = someLoader.getController();
+        p.setUser(this.user);*/
 
         Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         someStage.setScene(someScene);

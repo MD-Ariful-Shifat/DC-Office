@@ -10,6 +10,8 @@ import Model.AA;
 import Model.EI;
 import Model.DM;
 import Model.SACEB;
+import Model.Drro;
+import Model.UNO;
 import Model.User;
 import java.io.File;
 import java.io.FileInputStream;
@@ -53,7 +55,7 @@ public class SignInPageController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        String[] users = {"DC", "SAC", "AA", "EI", "DM", "SACEB", "UNO", "DR"};
+        String[] users = {"DC", "SAC", "AA", "EI", "DM", "SACEB", "UNO", "Drro"};
         userComboBox.getItems().addAll(users);
     }    
 
@@ -146,8 +148,34 @@ public class SignInPageController implements Initializable {
             someStage.setScene(someScene);
             someStage.show();
         }
+        else if (usertype.equals("Drro")){
+            Parent root = null;
+            FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DrroDashboard.fxml"));
+            root = (Parent) someLoader.load();
+            Scene someScene = new Scene(root);
+
+            /*SACDashboardController p = someLoader.getController();
+            p.setUser((SAC) this.user);*/
+
+            Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            someStage.setScene(someScene);
+            someStage.show();
+        }
+        else if (usertype.equals("UNO")){
+            Parent root = null;
+            FXMLLoader someLoader = new FXMLLoader(getClass().getResource("UNOdashBoard.fxml"));
+            root = (Parent) someLoader.load();
+            Scene someScene = new Scene(root);
+
+            /*SACDashboardController p = someLoader.getController();
+            p.setUser((SAC) this.user);*/
+
+            Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            someStage.setScene(someScene);
+            someStage.show();
+        }
         
-        
+                
     }
 
     @FXML
@@ -173,6 +201,9 @@ public class SignInPageController implements Initializable {
         
         DM dm1 = new DM(401, "password", "Sadia", "Bashundhara", "0170101010", date1, "Dhaka");
         SACEB saceb1 = new SACEB(402, "password", "Sadia", "Bashundhara", "0170101010", date1, "Dhaka");
+        Drro drr1 = new Drro(501, "password", "Israt", "Bashundhara", "0170101010", date1, "Dhaka");
+        UNO uno1 = new UNO(502, "password", "Israt", "Bashundhara", "0170101010", date1, "Dhaka");
+
 
 
 
@@ -202,7 +233,8 @@ public class SignInPageController implements Initializable {
             oos.writeObject(ei1);
             oos.writeObject(dm1);
             oos.writeObject(saceb1);
-
+            oos.writeObject(drr1);
+            oos.writeObject(uno1);
             oos.close();
 
         } catch (IOException ex) {} 

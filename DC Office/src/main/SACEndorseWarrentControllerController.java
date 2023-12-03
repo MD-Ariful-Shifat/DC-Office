@@ -14,7 +14,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -22,12 +24,16 @@ import javafx.stage.Stage;
  *
  * @author USER
  */
-public class DCOrganizingController implements Initializable {
+public class SACEndorseWarrentControllerController implements Initializable {
 
     @FXML
-    private TextArea inputTextArea;
-    @FXML
     private TextArea outputTextArea;
+    @FXML
+    private TextField eventTextField;
+    @FXML
+    private TextField locationTextField;
+    @FXML
+    private DatePicker datePicker;
 
     /**
      * Initializes the controller class.
@@ -42,13 +48,9 @@ public class DCOrganizingController implements Initializable {
     }
 
     @FXML
-    private void deleteOnClick(ActionEvent event) {
-    }
-
-    @FXML
-    private void backOnClick(ActionEvent event) throws IOException {
+    private void backkOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Dashboard.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SAC Dashboard.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
@@ -59,5 +61,6 @@ public class DCOrganizingController implements Initializable {
         someStage.setScene(someScene);
         someStage.show();
     }
+    
     
 }

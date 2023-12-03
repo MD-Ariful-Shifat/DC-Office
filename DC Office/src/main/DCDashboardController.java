@@ -42,25 +42,6 @@ public class DCDashboardController implements Initializable {
 
 
     @FXML
-    private void signoutOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SignIn Page.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
-        
-        System.out.println(this.user.toString());
-
-        /*SignInPageController p = someLoader.getController();
-        p.setUser( this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
-
-
-    }
-
-    @FXML
     private void localOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC updates notes.fxml"));
@@ -122,21 +103,6 @@ public class DCDashboardController implements Initializable {
     }
 
     @FXML
-    private void socialOnClick(ActionEvent event) throws IOException {
-        Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Organizing.fxml"));
-        root = (Parent) someLoader.load();
-        Scene someScene = new Scene(root);
-
-        /*SomeFXMLController p = someLoader.getController();
-        p.setUser(this.user);*/
-
-        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        someStage.setScene(someScene);
-        someStage.show();
-    }
-
-    @FXML
     private void appointmentOnClick(ActionEvent event) throws IOException {
         Parent root = null;
         FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Appointments and meetings.fxml"));
@@ -152,14 +118,18 @@ public class DCDashboardController implements Initializable {
     }
 
     @FXML
-    private void addOnClick(ActionEvent event) throws IOException {
+    private void meetingOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void taxOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Add User.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Personal Tax.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
-        DCAddUserController p = someLoader.getController();
-        p.setUser( this.user);
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
 
         Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         someStage.setScene(someScene);
@@ -167,7 +137,36 @@ public class DCDashboardController implements Initializable {
     }
 
     @FXML
-    private void meetingOnClick(ActionEvent event) {
+    private void signouutOnClick(ActionEvent event) throws IOException {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SignIn Page.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+        
+/*        System.out.println(this.user.toString());
+
+        /*SignInPageController p = someLoader.getController();
+        p.setUser( this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
     }
+
+    @FXML
+    private void socialeventOnClick(ActionEvent event) throws IOException {
+        Parent root = null;
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Social.fxml"));
+        root = (Parent) someLoader.load();
+        Scene someScene = new Scene(root);
+
+        /*SomeFXMLController p = someLoader.getController();
+        p.setUser(this.user);*/
+
+        Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        someStage.setScene(someScene);
+        someStage.show();
+    }
+    
     
 }

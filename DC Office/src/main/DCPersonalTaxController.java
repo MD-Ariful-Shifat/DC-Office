@@ -14,7 +14,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 /**
@@ -22,12 +21,7 @@ import javafx.stage.Stage;
  *
  * @author USER
  */
-public class SACSubmitBudgetController implements Initializable {
-
-    @FXML
-    private TextArea inpuTextArea;
-    @FXML
-    private TextArea outputTextArea;
+public class DCPersonalTaxController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -38,14 +32,9 @@ public class SACSubmitBudgetController implements Initializable {
     }    
 
     @FXML
-    private void saveOnClick(ActionEvent event) {
-    }
-
-
-    @FXML
     private void backOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("SAC Dashboard.fxml"));
+        FXMLLoader someLoader = new FXMLLoader(getClass().getResource("DC Dashboard.fxml"));
         root = (Parent) someLoader.load();
         Scene someScene = new Scene(root);
 
@@ -55,6 +44,8 @@ public class SACSubmitBudgetController implements Initializable {
         Stage someStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         someStage.setScene(someScene);
         someStage.show();
+
+    
     }
     
 }

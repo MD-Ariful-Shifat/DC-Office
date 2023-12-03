@@ -7,7 +7,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="519.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.SACTaxReportController">
    <children>
-      <Text layoutX="46.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Collected Tax report:">
+      <Text layoutX="46.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Tax Report:">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>

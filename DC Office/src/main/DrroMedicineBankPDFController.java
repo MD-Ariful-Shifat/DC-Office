@@ -1,6 +1,6 @@
 
 package main;
-
+/*
 import com.itextpdf.io.font.FontConstants;
 import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.font.PdfFontFactory;
@@ -9,8 +9,8 @@ import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.List;
 import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.element.Text;
-import java.io.File;
+import com.itextpdf.layout.element.Text;*/
+/*import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
@@ -27,16 +27,32 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+<<<<<<< Updated upstream
 
 public class DrroMedicineBankPDFController implements Initializable {
+=======
+/**
+ * FXML Controller class
+ *
+ * @author ASUS
+ */
+/*public class DrroMedicineBankPDFController implements Initializable {
+>>>>>>> Stashed changes
 
     @FXML
     private Button pdfFxid;
     @FXML
     private Button backbtnfxid;
 
+<<<<<<< Updated upstream
     
     @Override
+=======
+    /**
+     * Initializes the controller class.
+     */
+   /* @Override
+>>>>>>> Stashed changes
     public void initialize(URL url, ResourceBundle rb) {
         
     }    
@@ -45,9 +61,9 @@ public class DrroMedicineBankPDFController implements Initializable {
     private void PdfBtnOnClick(MouseEvent event) {
         
         {
-                try{
+                try{ */
                     
-            FileChooser fc = new FileChooser();
+         /*   FileChooser fc = new FileChooser();
             fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("PDF files", "*.pdf"));
             fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("Image files", "*.jpg", "*.bmp", "*.png"));
             File f = fc.showSaveDialog(null);
@@ -96,12 +112,12 @@ public class DrroMedicineBankPDFController implements Initializable {
                 Paragraph bookInfo2 = new Paragraph().add(title2);
                 Text title3 = new Text("Whole Dhaka City");
                 Paragraph bookInfo3 = new Paragraph().add(title3);
+                */
                 
                 
                 
                 
-                
-                doc.close();
+          /*      doc.close();
                 
                 Alert a = new Alert(Alert.AlertType.INFORMATION);
                 a.setContentText("The PDF is saved successfully.");
@@ -138,3 +154,4 @@ public class DrroMedicineBankPDFController implements Initializable {
     }
     
 }
+*/
